@@ -1,4 +1,4 @@
-import { data } from "../data/";
+import { data } from "../Data";
 
 const countries =
   data.filter((c) => c.total_vaccinations).map((c) => c.location) || [];

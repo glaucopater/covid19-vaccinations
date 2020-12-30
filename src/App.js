@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import asyncComponent from "./AsyncComponent";
-import { barOption } from "./optionConfig/options";
+import { barOption } from "./OptionConfig/options";
 import "./App.css";
 const BarReact = asyncComponent(() =>
   import(/* webpackChunkName: "BarReact" */ "./Charts/BarReact")
