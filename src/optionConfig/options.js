@@ -1,4 +1,5 @@
 import { data } from "../Data";
+import * as theme from "./dark.js";
 
 const countries =
   data.filter((c) => c.total_vaccinations).map((c) => c.location) || [];
@@ -48,6 +49,7 @@ export const option = {
 
 //柱状图数据
 export const barOption = {
+  darkMode: true,
   color: ["#3398DB"],
   tooltip: {
     trigger: "axis",

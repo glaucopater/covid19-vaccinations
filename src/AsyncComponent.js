@@ -5,7 +5,7 @@ const asyncComponent = loadComponent => (
       Component: null,
     }
 
-    componentWillMount() {
+    UNSAFE_componentWillMount() {
       if (this.hasLoadedComponent()) {
         return;
       }
