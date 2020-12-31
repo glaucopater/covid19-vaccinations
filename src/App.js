@@ -9,6 +9,53 @@ const BarReact = asyncComponent(() =>
 const getWorldData = (data) =>
   data.filter((c) => c.vaccinations && c.location === "World")[0];
 
+const getBarOption = (countries, vaccinations) => {
+
+  return {
+    color: ["#3398DB"],
+    tooltip: {
+      trigger: "axis",
+      axisPointer: {
+        type: "shadow"
+      }
+    },
+    grid: {
+      left: "3%",
+      right: "4%",
+      bottom: "3%",
+      containLabel: true
+    },
+    xAxis: [
+      {
+        type: "category",
+        axisLabel: {
+          rotate: 45
+        },
+        data: countries,
+        axisTick: {
+          alignWithLabel: true
+        }
+      }
+    ],
+    yAxis: [
+      {
+        type: "value"
+      }
+    ],
+    series: [
+      {
+        name: "Vaccinations",
+        type: "bar",
+        barWidth: "60%",
+        data: vaccinations
+      }
+    ]
+  };
+
+
+
+}
+
 
 const App = () => {
   const [data, setData] = React.useState();
@@ -28,51 +75,13 @@ const App = () => {
   else {
 
     const world = getWorldData(data);
+    data.sort(function (a, b) {
+      return b.vaccinations - a.vaccinations;
+    });
+
     const countries = data.filter((c) => c.vaccinations && c.location !== "World").map((c) => c.location);
     const vaccinations = data.filter((c) => c.vaccinations && c.location !== "World").map((c) => c.vaccinations);
-
-    const barOption = {
-      darkMode: true,
-      color: ["#3398DB"],
-      tooltip: {
-        trigger: "axis",
-        axisPointer: {
-          type: "shadow"
-        }
-      },
-      grid: {
-        left: "3%",
-        right: "4%",
-        bottom: "3%",
-        containLabel: true
-      },
-      xAxis: [
-        {
-          type: "category",
-          axisLabel: {
-            rotate: 45
-          },
-          data: countries,
-          axisTick: {
-            alignWithLabel: true
-          }
-        }
-      ],
-      yAxis: [
-        {
-          type: "value"
-        }
-      ],
-      series: [
-        {
-          name: "Vaccinations",
-          type: "bar",
-          barWidth: "60%",
-          data: vaccinations
-        }
-      ]
-    };
-
+    const barOption = getBarOption(countries, vaccinations);
 
     return (
       <>
