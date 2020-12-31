@@ -6,6 +6,10 @@ const BarReact = asyncComponent(() =>
   import(/* webpackChunkName: "BarReact" */ "./Charts/BarReact")
 );
 
+const getWorldData = (data) =>
+  data.filter((c) => c.vaccinations && c.location === "World")[0];
+
+
 const App = () => {
   const [data, setData] = React.useState();
   React.useEffect(async () => {
@@ -13,14 +17,19 @@ const App = () => {
     setData(result);
   }, [fetchLiveData])
 
-  let content;
 
   if (!data) {
-    content = <span>Loading...</span>;
+    return (
+      <div className="App-header">
+        <h1>Covid-19 vaccinations by country</h1>
+        <h2>Loading...</h2>
+      </div>)
   }
   else {
-    const countries = data.filter((c) => c.vaccinations).map((c) => c.location);
-    const vaccinations = data.filter((c) => c.vaccinations).map((c) => c.vaccinations);
+
+    const world = getWorldData(data);
+    const countries = data.filter((c) => c.vaccinations && c.location !== "World").map((c) => c.location);
+    const vaccinations = data.filter((c) => c.vaccinations && c.location !== "World").map((c) => c.vaccinations);
 
     const barOption = {
       darkMode: true,
@@ -65,17 +74,21 @@ const App = () => {
     };
 
 
-    console.log(countries, vaccinations);
-    content = <BarReact option={barOption} />;
+    return (
+      <>
+        <div className="App-header">
+          <h1>
+            Covid-19 vaccinations by country
+            {world && <span> World 🌍: {world.vaccinations}</span>}
+          </h1>
+          <h3>
+            {world && <span> Last Update: {world.date}</span>}
+          </h3>
+        </div>
+        <BarReact option={barOption} />
+      </>
+    )
   }
-
-  return (
-    <div>
-      <h2 className="App-header">Covid-19 vaccinations by country</h2>
-      {content}
-    </div>
-  );
-
 }
 
 export default App;

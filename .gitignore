@@ -59,4 +59,4 @@ typings/
 
 .idea
 build
-data/*.json
+data

@@ -13,14 +13,17 @@
   margin: 0;
 }
 
-.App-intro {
-  font-size: large;
+.App-header h1 {
+  display: flex;
+  justify-content: space-between;
 }
+
 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
