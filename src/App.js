@@ -2,6 +2,7 @@ import React from "react";
 import asyncComponent from "./AsyncComponent";
 import "./App.css";
 import { fetchLiveData } from "./Api";
+import { pop } from "echarts/lib/component/dataZoom/history";
 const BarReact = asyncComponent(() =>
   import(/* webpackChunkName: "BarReact" */ "./Charts/BarReact")
 );
@@ -9,45 +10,56 @@ const BarReact = asyncComponent(() =>
 const getWorldData = (data) =>
   data.filter((c) => c.vaccinations && c.location === "World")[0];
 
-const getBarOption = (countries, vaccinations) => {
+const getBarOption = (aggregatedData) => {
+
 
   return {
-    color: ["#3398DB"],
     tooltip: {
       trigger: "axis",
       axisPointer: {
         type: "shadow"
+      },
+      formatter: function (params) {
+        const { population, vaccinations, lastUpdate } = aggregatedData.filter(c => c.country === params[0].name)[0];
+        var colorSpan = color => '<span style="display:inline-block;margin-right:5px;border-radius:10px;width:9px;height:9px;background-color:' + color + '"></span>';
+        let content = '<p><b>' + params[0].axisValue + '</b></p>';
+        params.forEach(item => {
+          content += '<p>' + colorSpan(item.color) + ' Population: ' + population + '</p>';
+          content += '<p>' + colorSpan(item.color) + ' Vaccinations: ' + vaccinations + '</p>';
+          content += '<p>' + colorSpan(item.color) + ' Vaccinated: ' + item.data.toFixed(4) + '%' + '</p>';
+          content += '<p>' + colorSpan(item.color) + ' Last Update: ' + lastUpdate + '</p>';
+
+        });
+        return content;
       }
     },
     grid: {
       left: "3%",
-      right: "4%",
+      right: "10%",
       bottom: "3%",
       containLabel: true
     },
-    xAxis: [
+    yAxis: [
       {
         type: "category",
-        axisLabel: {
-          rotate: 45
-        },
-        data: countries,
+        name: 'Countries',
+        data: aggregatedData.map(c => c.country),
         axisTick: {
           alignWithLabel: true
         }
       }
     ],
-    yAxis: [
+    xAxis: [
       {
-        type: "value"
+        type: 'value',
+        name: '%'
       }
     ],
     series: [
       {
-        name: "Vaccinations",
-        type: "bar",
-        barWidth: "60%",
-        data: vaccinations
+        name: 'Population Vaccinated',
+        type: 'bar',
+        data: aggregatedData.map(c => c.vaccinationsPerPopulation)
       }
     ]
   };
@@ -75,26 +87,36 @@ const App = () => {
   else {
 
     const world = getWorldData(data);
-    data.sort(function (a, b) {
-      return b.vaccinations - a.vaccinations;
+    const countriesData = data.filter((c) => c.vaccinations && c.location !== "World");
+    const aggregatedData = countriesData.map((c) => {
+      return {
+        country: c.location,
+        population: c.population,
+        vaccinations: c.vaccinations,
+        vaccinationsPerPopulation: (c.vaccinations * 100 / c.population),
+        lastUpdate: c.date
+      }
     });
 
-    const countries = data.filter((c) => c.vaccinations && c.location !== "World").map((c) => c.location);
-    const vaccinations = data.filter((c) => c.vaccinations && c.location !== "World").map((c) => c.vaccinations);
-    const barOption = getBarOption(countries, vaccinations);
+    aggregatedData.sort(function (a, b) {
+      return a.vaccinationsPerPopulation - b.vaccinationsPerPopulation;
+    });
+
+    const barOption = getBarOption(aggregatedData);
 
     return (
       <>
         <div className="App-header">
           <h1>
-            Covid-19 vaccinations by country
-            {world && <span> World 🌍: {world.vaccinations}</span>}
+            Covid-19 Worldwide Vaccinations 🌍
+            {world && <span> Total 💉{world.vaccinations}</span>}
           </h1>
-          <h3>
-            {world && <span> Last Update: {world.date}</span>}
-          </h3>
         </div>
         <BarReact option={barOption} />
+        <div className="App-footer">
+          {world && <span> Last Update {world.date}</span>}
+          {<span>Made by GP</span>}
+        </div>
       </>
     )
   }

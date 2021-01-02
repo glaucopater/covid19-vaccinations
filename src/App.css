@@ -18,6 +18,15 @@
   justify-content: space-between;
 }
 
+.App-footer {
+  background-color: #222;
+  padding: 20px;
+  color: white;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
 
 @keyframes App-logo-spin {
   from {
