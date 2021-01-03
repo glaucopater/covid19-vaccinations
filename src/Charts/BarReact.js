@@ -3,9 +3,15 @@ import echarts from "echarts/lib/echarts";
 import "echarts/lib/component/tooltip";
 import "echarts/lib/component/grid";
 import "echarts/lib/chart/bar";
+import "./BarChart.css";
 
+
+const getContent = ({ label, value }) => {
+  return "<p><span class='itemLabel' ></span> " + label + " " + value + "</p>";
+}
 
 export const getBarOption = (aggregatedData) => {
+
   return {
     tooltip: {
       trigger: "axis",
@@ -14,14 +20,13 @@ export const getBarOption = (aggregatedData) => {
       },
       formatter: function (params) {
         const { population, vaccinations, lastUpdate } = aggregatedData.filter(c => c.country === params[0].name)[0];
-        var colorSpan = color => '<span style="display:inline-block;margin-right:5px;border-radius:10px;width:9px;height:9px;background-color:' + color + '"></span>';
         let content = '<p><b>' + params[0].axisValue + '</b></p>';
         params.forEach(item => {
-          content += '<p>' + colorSpan(item.color) + ' Population: ' + population + '</p>';
-          content += '<p>' + colorSpan(item.color) + ' Vaccinations: ' + vaccinations + '</p>';
+          content += getContent({ label: "Population", value: population });
+          content += getContent({ label: "Vaccinations", value: vaccinations });
           const percentageLabel = item.data < 0.1 ? item.data.toFixed(4) : item.data.toFixed(2);
-          content += '<p>' + colorSpan(item.color) + ' Vaccinated: ' + percentageLabel + '%' + '</p>';
-          content += '<p>' + colorSpan(item.color) + ' Last Update: ' + lastUpdate + '</p>';
+          content += getContent({ label: "Vaccinated", value: percentageLabel + '%' });
+          content += getContent({ label: "Last Update", value: lastUpdate });
         });
         return content;
       }
@@ -29,7 +34,7 @@ export const getBarOption = (aggregatedData) => {
     grid: {
       left: "3%",
       right: "10%",
-      bottom: "3%",
+      bottom: "5%",
       containLabel: true
     },
     yAxis: [
@@ -52,9 +57,16 @@ export const getBarOption = (aggregatedData) => {
       {
         name: 'Population Vaccinated',
         type: 'bar',
+        itemStyle: {
+          normal: {
+            color: (d) => {
+              return "#" + Math.floor(Math.random() * (256 * 256 * 256 - 1)).toString(16);
+            }
+          }
+        },
         data: aggregatedData.map(c => c.vaccinationsPerPopulation)
       }
-    ]
+    ],
   };
 }
 
