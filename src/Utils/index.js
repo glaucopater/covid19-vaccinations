@@ -2,12 +2,14 @@
 export const getWorldData = (data) =>
     data.filter((c) => c.vaccinations && c.location === "World")[0];
 
-export const getCountriesData = (data) =>
-    data.filter((c) => c.vaccinations && c.location !== "World");
+export const getCountriesDataByContinent = (data, continent) =>
+    data.filter((c) => c.vaccinations && c.location !== "World" && c.continent === continent);
 
 export const getAggregatedData = (countriesData) => {
+
     const aggregatedData = countriesData.map((c) => {
         return {
+            continent: c.continent,
             country: c.location,
             population: c.population,
             vaccinations: c.vaccinations,
