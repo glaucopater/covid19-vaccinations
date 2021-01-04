@@ -1,7 +1,7 @@
 {
   "name": "covid-19-vaccinations-by-country",
-  "author": "GLauco Pater",
-  "version": "0.1.0",
+  "author": "Glauco Pater",
+  "version": "1.0.0",
   "license": "MIT",
   "dependencies": {
     "echarts": "^5.0.0",
