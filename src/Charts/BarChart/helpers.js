@@ -4,7 +4,6 @@ export const getContent = ({ label, value }) => {
 }
 
 export const getBarOption = (aggregatedData) => {
-
     return {
         tooltip: {
             trigger: "axis",
@@ -33,7 +32,7 @@ export const getBarOption = (aggregatedData) => {
         yAxis: [
             {
                 type: "category",
-                name: 'Countries',
+                name: aggregatedData.length > 0 ? aggregatedData[0].continent : "",
                 data: aggregatedData.map(c => c.country),
                 axisTick: {
                     alignWithLabel: true
