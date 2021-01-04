@@ -2,7 +2,8 @@ import React from "react";
 import "./App.css";
 import { fetchLiveData } from "./Api";
 import { getAggregatedData, getWorldData } from "./Utils"
-import BarReact, { getBarOption } from "./Charts/BarReact";
+import { getBarOption } from "./Charts/BarChart/helpers";
+import { BarChart } from "./Charts/BarChart";
 
 
 const App = () => {
@@ -34,7 +35,7 @@ const App = () => {
             {world && <span> Total 💉{world.vaccinations}</span>}
           </h1>
         </div>
-        <BarReact option={barOption} />
+        <BarChart option={barOption} />
         <div className="App-footer">
           {world && <span> Last Update {world.date}</span>}
           {<span>Made by GP</span>}
