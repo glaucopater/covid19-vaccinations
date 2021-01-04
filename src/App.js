@@ -67,7 +67,7 @@ const App = () => {
         </div>
         <div className="App-footer">
           {world && <span> Last Update {world.date}</span>}
-          {<span>Made by GP</span>}
+          {<span>Made with 💙 by <a href='https://github.com/glaucopater/covid19-vaccinations'>GP</a></span>}
         </div>
       </>
     )
