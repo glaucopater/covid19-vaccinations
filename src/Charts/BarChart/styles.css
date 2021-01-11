@@ -6,3 +6,11 @@
     height: 9px;
     background-color: #0000FF;
 }
+
+.itemOld {
+    color: red;
+}
+
+.itemOld::after {
+    content: '🕒';
+}

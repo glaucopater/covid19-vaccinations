@@ -24,7 +24,10 @@ export const getAggregatedData = (countriesData) => {
         return a.vaccinationsPerPopulation - b.vaccinationsPerPopulation;
     });
 
-    return aggregatedData;
+    const dates = aggregatedData && aggregatedData.map(d => new Date(d.lastUpdate)) || [];
+    const statsDate = dates.length > 0 && (new Date(Math.max.apply(null, dates))).toISOString().split('T')[0] || "";
+
+    return [aggregatedData, statsDate];
 }
 
 

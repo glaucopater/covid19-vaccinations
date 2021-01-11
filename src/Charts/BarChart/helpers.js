@@ -1,13 +1,19 @@
 
-export const getContent = ({ label, value }) => {
-    return "<p><span class='itemLabel' ></span> " + label + " " + value + "</p>";
+export const getContent = ({ label, value, isOld }) => {
+    const val = isOld ? `<span class='itemOld'>${value}</span>` : value;
+    return `<p><span class='itemLabel'></span> ${label} ${val} </p>`;
 }
 
 const getPercentage = (item) => {
     return item.data < 0.1 ? item.data.toFixed(4) : item.data.toFixed(2);
 }
 
-export const getBarOption = (aggregatedData) => {
+const checkIsOldDate = (lastUpdate, statsDate) => {
+    return statsDate !== "" && lastUpdate !== statsDate
+}
+
+export const getBarOption = ([aggregatedData, statsDate]) => {
+
     return {
         tooltip: {
             trigger: "axis",
@@ -23,7 +29,7 @@ export const getBarOption = (aggregatedData) => {
                     content += getContent({ label: "Total Cases", value: totalCases.toLocaleString() });
                     content += getContent({ label: "New Cases", value: newCases.toLocaleString() });
                     content += getContent({ label: "Vaccinated", value: getPercentage(item) + '%' });
-                    content += getContent({ label: "Last Update", value: lastUpdate });
+                    content += getContent({ label: "Last Update", value: lastUpdate.toLocaleString(), isOld: checkIsOldDate(lastUpdate, statsDate) });
                 });
                 return content;
             }
