@@ -31,23 +31,17 @@ const App = () => {
     const countriesDataSouthAmerica = getCountriesDataByContinent(data, "South America");
     const countriesDataOceania = getCountriesDataByContinent(data, "Oceania");
 
-    const aggregatedDataEurope = getAggregatedData(countriesDataEurope);
-    const barOptionEurope = getBarOption(aggregatedDataEurope);
+    const barOptionEurope = getBarOption(getAggregatedData(countriesDataEurope));
 
-    const aggregatedDataAsia = getAggregatedData(countriesDataAsia);
-    const barOptionAsia = getBarOption(aggregatedDataAsia);
+    const barOptionAsia = getBarOption(getAggregatedData(countriesDataAsia));
 
-    const aggregatedDataAfrica = getAggregatedData(countriesDataAfrica);
-    const barOptionAfrica = getBarOption(aggregatedDataAfrica);
+    const barOptionAfrica = getBarOption(getAggregatedData(countriesDataAfrica));
 
-    const aggregatedDataNorthAmerica = getAggregatedData(countriesDataNorthAmerica);
-    const barOptionNorthAmerica = getBarOption(aggregatedDataNorthAmerica);
+    const barOptionNorthAmerica = getBarOption(getAggregatedData(countriesDataNorthAmerica));
 
-    const aggregatedDataSouthAmerica = getAggregatedData(countriesDataSouthAmerica);
-    const barOptionSouthAmerica = getBarOption(aggregatedDataSouthAmerica);
+    const barOptionSouthAmerica = getBarOption(getAggregatedData(countriesDataSouthAmerica));
 
-    const aggregatedDataOceania = getAggregatedData(countriesDataOceania);
-    const barOptionOceania = getBarOption(aggregatedDataOceania);
+    const barOptionOceania = getBarOption(getAggregatedData(countriesDataOceania));
 
     return (
       <>

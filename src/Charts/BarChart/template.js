@@ -3,6 +3,7 @@ import echarts from "echarts/lib/echarts";
 import "echarts/lib/component/tooltip";
 import "echarts/lib/component/grid";
 import "echarts/lib/chart/bar";
+import 'echarts/lib/component/legend';
 import "./styles.css";
 
 
@@ -30,7 +31,7 @@ export default class BarChart extends React.Component {
   }
 
   render() {
-    const { width = "100%", height = "600px" } = this.props;
+    const { width = "100%", height = "800px" } = this.props;
     return <div ref={(ID) => (this.ID = ID)} style={{ width, height }}></div>;
   }
 }
