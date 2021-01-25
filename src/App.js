@@ -48,7 +48,7 @@ const App = () => {
         <div className="App-header">
           <h1>
             Covid-19 🌍 Vaccinations
-            {world && <span> Total 💉{world.vaccinations}</span>}
+            {world && <span> Total 💉{world.vaccinations.toLocaleString()}</span>}
           </h1>
         </div>
         <div className="App-grid">

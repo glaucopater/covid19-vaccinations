@@ -28,7 +28,8 @@ export const getBarOption = ([aggregatedData, statsDate]) => {
                     content += getContent({ label: "Vaccinations", value: vaccinations.toLocaleString() });
                     content += getContent({ label: "Total Cases", value: totalCases.toLocaleString() });
                     content += getContent({ label: "New Cases", value: newCases.toLocaleString() });
-                    content += getContent({ label: "Vaccinated", value: getPercentage(item) + '%' });
+                    if (item.seriesIndex === 0)
+                        content += getContent({ label: "Vaccinated", value: getPercentage(item) + '%' });
                     content += getContent({ label: "Last Update", value: lastUpdate.toLocaleString(), isOld: checkIsOldDate(lastUpdate, statsDate) });
                 });
                 return content;
