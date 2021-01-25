@@ -1,5 +1,5 @@
 import React from "react";
-import echarts from "echarts/lib/echarts";
+import * as echarts from "echarts/lib/echarts";
 import "echarts/lib/component/tooltip";
 import "echarts/lib/component/grid";
 import "echarts/lib/chart/bar";
