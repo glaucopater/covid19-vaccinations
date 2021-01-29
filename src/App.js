@@ -5,14 +5,13 @@ import { getAggregatedData, getCountriesDataByContinent, getWorldData } from "./
 import { getBarOption } from "./Charts/BarChart/helpers";
 import { BarChart } from "./Charts/BarChart";
 
-
 const App = () => {
   const [data, setData] = React.useState();
+
   React.useEffect(async () => {
     const result = await fetchLiveData(data);
     setData(result);
   }, [fetchLiveData])
-
 
   if (!data) {
     return (
@@ -32,15 +31,10 @@ const App = () => {
     const countriesDataOceania = getCountriesDataByContinent(data, "Oceania");
 
     const barOptionEurope = getBarOption(getAggregatedData(countriesDataEurope));
-
     const barOptionAsia = getBarOption(getAggregatedData(countriesDataAsia));
-
     const barOptionAfrica = getBarOption(getAggregatedData(countriesDataAfrica));
-
     const barOptionNorthAmerica = getBarOption(getAggregatedData(countriesDataNorthAmerica));
-
     const barOptionSouthAmerica = getBarOption(getAggregatedData(countriesDataSouthAmerica));
-
     const barOptionOceania = getBarOption(getAggregatedData(countriesDataOceania));
 
     return (
