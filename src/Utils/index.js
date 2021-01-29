@@ -6,7 +6,6 @@ export const getCountriesDataByContinent = (data, continent) =>
     data.filter((c) => c.vaccinations && c.location !== "World" && c.continent === continent);
 
 export const getAggregatedData = (countriesData) => {
-
     const aggregatedData = countriesData.map((c) => {
         return {
             continent: c.continent,
