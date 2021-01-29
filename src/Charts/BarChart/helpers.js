@@ -39,7 +39,8 @@ export const getBarOption = ([aggregatedData, statsDate]) => {
             left: "3%",
             right: "10%",
             bottom: "5%",
-            containLabel: true
+            containLabel: true,
+            show: true
         },
         yAxis: [
             {
@@ -59,13 +60,13 @@ export const getBarOption = ([aggregatedData, statsDate]) => {
         legend: {
             selected: {
                 'Population Vaccinated %': true,
-                'Total infections': false,
+                'Infections': false,
                 'New cases': false,
             }
         },
         series: [
             {
-                name: 'Population Vaccinated %',
+                name: 'Vaccinated %',
                 type: 'bar',
                 stack: 'total',
                 itemStyle: {
@@ -74,7 +75,7 @@ export const getBarOption = ([aggregatedData, statsDate]) => {
                 data: aggregatedData.map(c => c.vaccinationsPerPopulation)
             },
             {
-                name: 'Total infections',
+                name: 'Infections',
                 type: 'bar',
                 stack: 'total',
                 itemStyle: {

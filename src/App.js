@@ -16,8 +16,8 @@ const App = () => {
   if (!data) {
     return (
       <div className="App-header">
-        <h1>Covid-19 vaccinations by country</h1>
-        <h2>Loading...</h2>
+        <h1>Covid-19 🌍 Vaccinations</h1>
+        <span>Loading...</span>
       </div>)
   }
   else {
