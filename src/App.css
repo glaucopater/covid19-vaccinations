@@ -18,6 +18,15 @@
   justify-content: space-between;
 }
 
+.App-header a {
+  color: white;
+  text-decoration: none;
+}
+
+.App-header a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width:400px) {
   .App-header {
     padding: 10px;
