@@ -41,7 +41,7 @@ const App = () => {
       <>
         <div className="App-header">
           <h1>
-            Covid-19 🌍 Vaccinations
+            <a href='./'>Covid-19 🌍 Vaccinations</a>
             {world && <span> Total 💉{world.vaccinations.toLocaleString()}</span>}
           </h1>
         </div>
