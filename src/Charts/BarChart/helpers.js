@@ -1,6 +1,7 @@
 
 export const getContent = ({ label, value, isOld }) => {
-    const val = isOld ? `<span class='itemOld'>${value}</span>` : value;
+    const valueToString = value ? value.toLocaleString() : 0;
+    const val = isOld ? `<span class='itemOld'>${valueToString}</span>` : valueToString;
     return `<p><span class='itemLabel'></span> ${label} ${val} </p>`;
 }
 
@@ -24,13 +25,13 @@ export const getBarOption = ([aggregatedData, statsDate]) => {
                 const { population, vaccinations, totalCases, newCases, lastUpdate } = aggregatedData.filter(c => c.country === params[0].name)[0];
                 let content = '<p><b>' + params[0].axisValue + '</b></p>';
                 [params[0]].forEach(item => {
-                    content += getContent({ label: "Population", value: population.toLocaleString() });
-                    content += getContent({ label: "Vaccinations", value: vaccinations.toLocaleString() });
-                    content += getContent({ label: "Total Cases", value: totalCases.toLocaleString() });
-                    content += getContent({ label: "New Cases", value: newCases.toLocaleString() });
+                    content += getContent({ label: "Population", value: population });
+                    content += getContent({ label: "Vaccinations", value: vaccinations });
+                    content += getContent({ label: "Total Cases", value: totalCases });
+                    content += getContent({ label: "New Cases", value: newCases });
                     if (item.seriesIndex === 0)
                         content += getContent({ label: "Vaccinated", value: getPercentage(item) + '%' });
-                    content += getContent({ label: "Last Update", value: lastUpdate.toLocaleString(), isOld: checkIsOldDate(lastUpdate, statsDate) });
+                    content += getContent({ label: "Last Update", value: lastUpdate, isOld: checkIsOldDate(lastUpdate, statsDate) });
                 });
                 return content;
             }
