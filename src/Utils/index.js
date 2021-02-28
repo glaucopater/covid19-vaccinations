@@ -23,10 +23,13 @@ export const getAggregatedData = (countriesData) => {
         return a.vaccinationsPerPopulation - b.vaccinationsPerPopulation;
     });
 
-    const dates = aggregatedData && aggregatedData.map(d => new Date(d.lastUpdate)) || [];
+
+    const filteredAggregatedData = aggregatedData.filter(country => country.totalCases && country.totalCases > 0)
+    const dates = filteredAggregatedData && filteredAggregatedData.map(d => new Date(d.lastUpdate)) || [];
     const statsDate = dates.length > 0 && (new Date(Math.max.apply(null, dates))).toISOString().split('T')[0] || "";
 
-    return [aggregatedData, statsDate];
+
+    return [filteredAggregatedData, statsDate];
 }
 
 
