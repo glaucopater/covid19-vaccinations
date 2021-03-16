@@ -1,62 +1,71 @@
 import React from "react";
 import "./App.css";
-import { fetchLiveData } from "./Api";
+import { fetcher } from "./Api";
 import { getAggregatedData, getCountriesDataByContinent, getWorldData } from "./Utils"
 import { getBarOption } from "./Charts/BarChart/helpers";
 import { BarChart } from "./Charts/BarChart";
+import useSWR from 'swr';
+import { apiUrl } from "./Config";
+import { AppHeader } from "./Components/AppHeader";
+import { AppFooter } from "./Components/AppFooter";
 
 const App = () => {
   const [data, setData] = React.useState();
 
-  React.useEffect(async () => {
-    const result = await fetchLiveData(data);
-    setData(result);
-  }, [fetchLiveData])
+  const { data: apiData, error } = useSWR(apiUrl, fetcher);
+
+  React.useEffect(() => {
+    setData(apiData);
+  }, [apiData])
+
+  const pageTitle = <h1>Covid-19 🌍 Vaccinations</h1>;
+
+  if (error)
+    return (
+      <AppHeader>
+        {pageTitle}
+        <span>Failed to load!</span>
+      </AppHeader>
+    );
 
   if (!data) {
     return (
-      <div className="App-header">
-        <h1>Covid-19 🌍 Vaccinations</h1>
+      <AppHeader>
+        {pageTitle}
         <span>Loading...</span>
-      </div>)
+      </AppHeader>);
   }
   else {
     const world = getWorldData(data);
+    const barOptionsData = ["Europe", "Asia", "Africa", "North America", "South America", "Oceania"].map(country => {
+      const countryData = getCountriesDataByContinent(data, country);
+      return [countryData, getBarOption(getAggregatedData(countryData))];
+    })
 
-    const countriesDataEurope = getCountriesDataByContinent(data, "Europe");
-    const countriesDataAsia = getCountriesDataByContinent(data, "Asia");
-    const countriesDataAfrica = getCountriesDataByContinent(data, "Africa");
-    const countriesDataNorthAmerica = getCountriesDataByContinent(data, "North America");
-    const countriesDataSouthAmerica = getCountriesDataByContinent(data, "South America");
-    const countriesDataOceania = getCountriesDataByContinent(data, "Oceania");
-
-    const barOptionEurope = getBarOption(getAggregatedData(countriesDataEurope));
-    const barOptionAsia = getBarOption(getAggregatedData(countriesDataAsia));
-    const barOptionAfrica = getBarOption(getAggregatedData(countriesDataAfrica));
-    const barOptionNorthAmerica = getBarOption(getAggregatedData(countriesDataNorthAmerica));
-    const barOptionSouthAmerica = getBarOption(getAggregatedData(countriesDataSouthAmerica));
-    const barOptionOceania = getBarOption(getAggregatedData(countriesDataOceania));
+    const [, barOptionEurope] = barOptionsData[0];
+    const [, barOptionAsia] = barOptionsData[1];
+    const [countriesDataAfrica, barOptionAfrica] = barOptionsData[2];
+    const [countriesDataNorthAmerica, barOptionNorthAmerica] = barOptionsData[3];
+    const [countriesDataSouthAmerica, barOptionSouthAmerica] = barOptionsData[4];
+    const [countriesDataOceania, barOptionOceania] = barOptionsData[5];
 
     return (
       <>
-        <div className="App-header">
+        <AppHeader>
           <h1>
             <a href='./'>Covid-19 🌍 Vaccinations</a>
             {world && <span> Total 💉{world.vaccinations.toLocaleString()}</span>}
           </h1>
-        </div>
-        <div className="App-grid">
+        </AppHeader>
+        <main className="App-grid">
           <BarChart className="App-grid-item" option={barOptionEurope} />
           <BarChart className="App-grid-item" option={barOptionAsia} />
           {countriesDataAfrica.length > 0 && <BarChart className="App-grid-item" option={barOptionAfrica} />}
           {countriesDataNorthAmerica.length > 0 && <BarChart className="App-grid-item" option={barOptionNorthAmerica} />}
           {countriesDataSouthAmerica.length > 0 && <BarChart className="App-grid-item" option={barOptionSouthAmerica} />}
           {countriesDataOceania.length > 0 && <BarChart className="App-grid-item" option={barOptionOceania} />}
-        </div>
-        <div className="App-footer">
-          {world && <span> Last Update {world.date}</span>}
-          {<span>Made with 💙 by <a href='https://github.com/glaucopater/covid19-vaccinations'>GP</a></span>}
-        </div>
+        </main>
+        <AppFooter world={world} />
       </>
     )
   }
