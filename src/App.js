@@ -23,19 +23,17 @@ const App = () => {
   else {
     const world = getWorldData(data);
 
-    const countriesDataEurope = getCountriesDataByContinent(data, "Europe");
-    const countriesDataAsia = getCountriesDataByContinent(data, "Asia");
-    const countriesDataAfrica = getCountriesDataByContinent(data, "Africa");
-    const countriesDataNorthAmerica = getCountriesDataByContinent(data, "North America");
-    const countriesDataSouthAmerica = getCountriesDataByContinent(data, "South America");
-    const countriesDataOceania = getCountriesDataByContinent(data, "Oceania");
+    const barOptionsData = ["Europe", "Asia", "Africa", "North America", "South America", "Oceania"].map(country => {
+      const countryData = getCountriesDataByContinent(data, country);
+      return [countryData, getBarOption(getAggregatedData(countryData))];
+    })
 
-    const barOptionEurope = getBarOption(getAggregatedData(countriesDataEurope));
-    const barOptionAsia = getBarOption(getAggregatedData(countriesDataAsia));
-    const barOptionAfrica = getBarOption(getAggregatedData(countriesDataAfrica));
-    const barOptionNorthAmerica = getBarOption(getAggregatedData(countriesDataNorthAmerica));
-    const barOptionSouthAmerica = getBarOption(getAggregatedData(countriesDataSouthAmerica));
-    const barOptionOceania = getBarOption(getAggregatedData(countriesDataOceania));
+    const [, barOptionEurope] = barOptionsData[0];
+    const [, barOptionAsia] = barOptionsData[1];
+    const [countriesDataAfrica, barOptionAfrica] = barOptionsData[2];
+    const [countriesDataNorthAmerica, barOptionNorthAmerica] = barOptionsData[3];
+    const [countriesDataSouthAmerica, barOptionSouthAmerica] = barOptionsData[4];
+    const [countriesDataOceania, barOptionOceania] = barOptionsData[5];
 
     return (
       <>

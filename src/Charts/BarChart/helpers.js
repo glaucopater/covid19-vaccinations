@@ -13,6 +13,21 @@ const checkIsOldDate = (lastUpdate, statsDate) => {
     return statsDate !== "" && lastUpdate !== statsDate
 }
 
+const tooltipFormatter = (params, aggregatedData, statsDate) => {
+    const { population, vaccinations, totalCases, newCases, lastUpdate } = aggregatedData.filter(c => c.country === params[0].name)[0];
+    let content = '<p><b>' + params[0].axisValue + '</b></p>';
+    [params[0]].forEach(item => {
+        content += getContent({ label: "Population", value: population });
+        content += getContent({ label: "Vaccinations", value: vaccinations });
+        content += getContent({ label: "Total Cases", value: totalCases });
+        content += getContent({ label: "New Cases", value: newCases });
+        if (item.seriesIndex === 0)
+            content += getContent({ label: "Vaccinated", value: getPercentage(item) + '%' });
+        content += getContent({ label: "Last Update", value: lastUpdate, isOld: checkIsOldDate(lastUpdate, statsDate) });
+    });
+    return content;
+}
+
 export const getBarOption = ([aggregatedData, statsDate]) => {
 
     return {
@@ -21,20 +36,7 @@ export const getBarOption = ([aggregatedData, statsDate]) => {
             axisPointer: {
                 type: "shadow"
             },
-            formatter: function (params) {
-                const { population, vaccinations, totalCases, newCases, lastUpdate } = aggregatedData.filter(c => c.country === params[0].name)[0];
-                let content = '<p><b>' + params[0].axisValue + '</b></p>';
-                [params[0]].forEach(item => {
-                    content += getContent({ label: "Population", value: population });
-                    content += getContent({ label: "Vaccinations", value: vaccinations });
-                    content += getContent({ label: "Total Cases", value: totalCases });
-                    content += getContent({ label: "New Cases", value: newCases });
-                    if (item.seriesIndex === 0)
-                        content += getContent({ label: "Vaccinated", value: getPercentage(item) + '%' });
-                    content += getContent({ label: "Last Update", value: lastUpdate, isOld: checkIsOldDate(lastUpdate, statsDate) });
-                });
-                return content;
-            }
+            formatter: (params) => tooltipFormatter(params, aggregatedData, statsDate)
         },
         grid: {
             left: "3%",
