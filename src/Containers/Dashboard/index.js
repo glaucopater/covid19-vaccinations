@@ -1,24 +1,17 @@
 import React from "react";
 import "../../App.css";
-import { fetcher } from "../../Api";
+import { useApi } from "../../Api";
 import { getAggregatedData, getCountriesDataByContinent, getWorldData } from "../../Utils/dashboard"
 import { getBarOption } from "../../Charts/BarChart/helpers";
 import { BarChart } from "../../Charts/BarChart";
-import useSWR from 'swr';
-import { apiUrl } from "../../Config";
 import { AppHeader } from "../../Components/AppHeader";
 import { PageTitle } from "../../Components/PageTitle";
 import { AppFooter } from "../../Components/AppFooter";
 
 const Dashboard = () => {
-    const [data, setData] = React.useState();
-    const { data: apiData, error } = useSWR(apiUrl, fetcher);
+    const { apiData, isError } = useApi();
 
-    React.useEffect(() => {
-        setData(apiData);
-    }, [apiData])
-
-    if (error)
+    if (isError)
         return (
             <AppHeader>
                 <PageTitle />
@@ -26,7 +19,7 @@ const Dashboard = () => {
             </AppHeader>
         );
 
-    if (!data) {
+    if (!apiData) {
         return (
             <AppHeader>
                 <PageTitle />
@@ -34,9 +27,9 @@ const Dashboard = () => {
             </AppHeader>);
     }
     else {
-        const world = getWorldData(data);
+        const world = getWorldData(apiData);
         const barOptionsData = ["Europe", "Asia", "Africa", "North America", "South America", "Oceania"].map(country => {
-            const countryData = getCountriesDataByContinent(data, country);
+            const countryData = getCountriesDataByContinent(apiData, country);
             return [countryData, getBarOption(getAggregatedData(countryData))];
         })
 
