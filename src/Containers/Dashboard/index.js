@@ -1,12 +1,13 @@
 import React from "react";
 import "../../App.css";
 import { fetcher } from "../../Api";
-import { getAggregatedData, getCountriesDataByContinent, getWorldData } from "../../Utils"
+import { getAggregatedData, getCountriesDataByContinent, getWorldData } from "../../Utils/dashboard"
 import { getBarOption } from "../../Charts/BarChart/helpers";
 import { BarChart } from "../../Charts/BarChart";
 import useSWR from 'swr';
 import { apiUrl } from "../../Config";
 import { AppHeader } from "../../Components/AppHeader";
+import { PageTitle } from "../../Components/PageTitle";
 import { AppFooter } from "../../Components/AppFooter";
 
 const Dashboard = () => {
@@ -17,12 +18,10 @@ const Dashboard = () => {
         setData(apiData);
     }, [apiData])
 
-    const pageTitle = <h1>Covid-19 🌍 Vaccinations</h1>;
-
     if (error)
         return (
             <AppHeader>
-                {pageTitle}
+                <PageTitle />
                 <span>Failed to load!</span>
             </AppHeader>
         );
@@ -30,7 +29,7 @@ const Dashboard = () => {
     if (!data) {
         return (
             <AppHeader>
-                {pageTitle}
+                <PageTitle />
                 <span>Loading...</span>
             </AppHeader>);
     }
@@ -52,9 +51,9 @@ const Dashboard = () => {
             <>
                 <AppHeader>
                     <h1>
-                        <a href='./'>Covid-19 🌍 Vaccinations</a>
-                        {world && <span> Total 💉{world.vaccinations.toLocaleString()}</span>}
+                        <PageTitle />
                     </h1>
+                    {world && <h2> Total 💉{world.vaccinations.toLocaleString()}</h2>}
                 </AppHeader>
                 <main className="App-grid">
                     <BarChart className="App-grid-item" option={barOptionEurope} />

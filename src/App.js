@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import Dashboard from "./Containers/Dashboard";
+import Globe from "./Containers/Globe";
 import {
   BrowserRouter as Router,
   Switch,
@@ -11,9 +12,8 @@ const App = () => {
   return (
     <Router>
       <Switch>
-        <Route path="/">
-          <Dashboard />
-        </Route>
+        <Route exact path="/" component={Dashboard} />
+        <Route path="/globe" component={Globe} />
       </Switch>
     </Router>
   )

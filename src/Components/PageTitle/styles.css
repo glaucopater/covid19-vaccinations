@@ -1,0 +1,9 @@
+.container {
+    display: flex;
+    place-content: flex-start;
+    place-items: center;
+}
+
+.globeLink {
+    text-decoration: none;
+}

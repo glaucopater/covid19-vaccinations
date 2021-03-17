@@ -1,1 +1,3 @@
-export const AppHeader = ({ children }) => <header className="App-header">{children}</header>;
+import "./styles.css";
+
+export const AppHeader = ({ small, children }) => <header className={small ? "App-header small" : "App-header"} >{children}</header>;
