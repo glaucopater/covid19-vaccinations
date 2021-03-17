@@ -17,10 +17,13 @@
 .App-header a {
     color: white;
     text-decoration: none;
+    transition: all 1s ease-in;
+
 }
 
 .App-header a:hover {
-    color: #f0f0f0;
+    color: aquamarine;
+    transition: all 1s ease-in;
 }
 
 @media (max-width:400px) {

@@ -3,9 +3,8 @@ import {
 } from "react-router-dom"
 import "./styles.css";
 
-export const PageTitle = () =>
+export const PageTitle = ({ small }) =>
     <div className="container">
         <Link to='./'>Covid-19 Vaccinations</Link>
-        <Link className="globeLink" to='./globe'>🌍</Link>
+        <Link className={small ? "globeLink globeLinkSmall" : "globeLink"} to='./globe'>🌍</Link>
     </div>
-
