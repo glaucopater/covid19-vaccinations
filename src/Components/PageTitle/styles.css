@@ -12,9 +12,17 @@
     width: 48px;
     height: 48px;
     text-align: center;
+    opacity: 0.8;
+    transition: all 1s ease-in;
+}
+
+.globeLinkSmall {
+    width: auto;
+    height: auto;
 }
 
 .globeLink:hover {
-    text-decoration: none;
-    border: 1px solid blue;
+    opacity: 1;
+    transition: all 1s ease-in;
+
 }

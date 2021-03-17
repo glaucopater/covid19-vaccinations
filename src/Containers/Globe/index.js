@@ -102,7 +102,7 @@ export default function Globe() {
     return (
         <>
             <AppHeader small>
-                <PageTitle />
+                <PageTitle small />
             </AppHeader>
             <Canvas camera={{ position: [0, 10, 20], fov: 40 }}>
                 <color attach="background" args={['black']} />
