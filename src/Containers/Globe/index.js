@@ -3,7 +3,7 @@ import { Canvas, useLoader } from 'react-three-fiber';
 import { Controls } from '../../Components/Controls';
 import * as THREE from 'three';
 import { RADIUS_SPHERE, convertLatLon, latLongToVector3 } from "../../Utils/three";
-import countriesData from "../../Store/Data/countries_min.json";
+import countriesData from "../../Store/countries.json";
 import useSWR from 'swr';
 import { apiUrl } from "../../Config";
 import { fetcher } from "../../Api";

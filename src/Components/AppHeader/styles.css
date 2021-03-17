@@ -20,7 +20,7 @@
 }
 
 .App-header a:hover {
-    text-decoration: underline;
+    color: #f0f0f0;
 }
 
 @media (max-width:400px) {
