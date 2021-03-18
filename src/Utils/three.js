@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { apiUrl } from "../Config";
+import { apiUrl } from "../Api/config";
 
 const RAD2DEG = 180 / Math.PI
 const DEG2RAD = Math.PI / 180
@@ -30,19 +30,18 @@ export function polarToCartesian(lon, lat, radius) {
  * @param {Vector3} coord
  * @return {Array<Number>}
  */
-function cartesianToPolar(coord) {
-
+export function cartesianToPolar(coord) {
     var lon = Math.atan2(coord.x, -coord.z) * RAD2DEG
     var length = Math.sqrt(coord.x * coord.x + coord.z * coord.z)
     var lat = Math.atan2(coord.y, length) * RAD2DEG
-
     return [lon, lat]
-
 }
 
-
-
-// convert the positions from a lat, lon to a position on a sphere.
+/**
+ * Convert the positions from a lat, lon to a position on a sphere.
+ * @param lat, lon, radius, heigth
+ * @return {Vector3} coord
+ */
 export function latLongToVector3(lat, lon, radius, heigth) {
     var phi = (lat) * Math.PI / 180;
     var theta = (lon - 180) * Math.PI / 180;
@@ -94,20 +93,4 @@ export const findPointsOnSphere = (d) => {
         }
     }
     return points
-}
-
-const parameters = {};
-
-export const fetchLiveData = () => {
-    return fetch(apiUrl, parameters)
-        .then(response => {
-            return response.text()
-        })
-        .then((data) => {
-            return data ? JSON.parse(data) : {}
-        })
-        .catch((error) => {
-            console.log(error)
-        })
-
 }

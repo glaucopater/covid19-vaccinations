@@ -12,21 +12,35 @@ import earth4 from './assets/earth4.jpg';
 import earth_bump from './assets/earth_bump.jpg';
 import "./styles.css";
 
-const LOOK_AT_COORDS = [0, 0, 0]
+const LOOK_AT_COORDS = [0, 0, 0];
 
-const Vaccination3dBar = (props) => {
-    const mesh = useRef()
-    const { position, onClick, vaccinations, population } = props;
+// definition of country size:
+// 1 bilion : 0.3
+// 1 milion -> 100 milions : 0.2
+// 100k -> 1 milions 0.1
+
+const Vaccination3dBar = ({ position, onClick, vaccinations, population }) => {
+    const mesh = useRef();
     useEffect(() => {
         mesh.current.lookAt(...LOOK_AT_COORDS)
     }, [mesh])
 
-    const boxDimensions = [1, 1, vaccinations * 100 / population]
+    let populationFactor;
+    if (population > 0 && population < 1000000)
+        populationFactor = 0.05;
+    else if (population >= 1000000 && population < 100000000)
+        populationFactor = 0.1;
+    else populationFactor = 0.3;
+
+    const boxDimensions = [1, 1, vaccinations * 100 / population];
+    const defaultScale = [populationFactor, populationFactor, 0.1];
+
     return (
-        <mesh position={position}
-            ref={mesh} scale={[0.1, 0.1, 0.1]}
-            onClick={onClick}
-        >
+        <mesh
+            position={position}
+            ref={mesh}
+            scale={defaultScale}
+            onClick={onClick}>
             <boxBufferGeometry args={boxDimensions} />
             <meshNormalMaterial />
         </mesh>
@@ -34,21 +48,20 @@ const Vaccination3dBar = (props) => {
 }
 
 
-const Earth = () => {
-
+const Earth = ({ setSelectedCountry }) => {
     const { apiData, isError } = useApi();
     const ref = useRef();
-    const [texture, bump] = useLoader(THREE.TextureLoader, [earth4, earth_bump])
+    const [texture, bump] = useLoader(THREE.TextureLoader, [earth4, earth_bump]);
+    const radium = RADIUS_SPHERE;
 
     if (isError) {
-        return <group ref={ref} name="error"></group>
+        return <group ref={ref} name="error"></group>;
     }
 
     if (!apiData || apiData === []) {
-        return <group ref={ref} name="loading"></group>
+        return <group ref={ref} name="loading"></group>;
     }
 
-    const radium = RADIUS_SPHERE;
     const points = countriesData.map(([name, lat, long]) => {
         const country = apiData.length > 0 && apiData.filter(item => item.location === name) || null
         const population = country && country[0] && country[0].population || 0
@@ -61,8 +74,14 @@ const Earth = () => {
         }
     })
 
+    const handleOnClick = (e, name, point, vaccinations, population) => {
+        setSelectedCountry({ name, population, vaccinations });
+        console.log(name, point, population.toLocaleString(), vaccinations.toLocaleString(),
+            e.point.x, e.point.y, e.point.z, convertLatLon([e.point.x, e.point.y, e.point.z]))
+    }
 
-    const globeContent = <group ref={ref} name="earth">
+
+    const earthContent = <group ref={ref} name="earth">
         {points && points.map(({ name, point, population, vaccinations }) => {
             if (population > 0)
                 return <Vaccination3dBar
@@ -70,32 +89,35 @@ const Earth = () => {
                     position={point}
                     population={population}
                     vaccinations={vaccinations}
-                    onClick={(e) => {
-                        console.log(name, population.toLocaleString(), vaccinations.toLocaleString(),
-                            e.point.x, e.point.y, e.point.z, convertLatLon([e.point.x, e.point.y, e.point.z]))
-                    }}
+                    onClick={(e) => handleOnClick(e, name, point, vaccinations, population)}
                 />
-        })
-        }
+        })}
         <mesh visible position={[0, 0, 0]}>
             <sphereBufferGeometry attach="geometry" args={[radium, 64, 64]} />
             <meshStandardMaterial attach="material" map={texture} bumpMap={bump} bumpScale={0.05} />
         </mesh>
     </group>
 
-
-    return globeContent;
-
+    return earthContent;
 }
 
+const CountryInfo = ({ name, population, vaccinations }) => {
+    return (
+        <div className="countryInfo">
+            {name}: {Number.parseFloat((vaccinations * 100 / population)).toFixed(2)}%
+        </div>);
+}
 
 export default function Globe() {
-    const defaultCameraPosition = [10, 20, 0];
+    const defaultCameraPosition = [12, 25, 12];
+    const [selectedCountry, setSelectedCountry] = React.useState();
+
     return (
         <>
             <AppHeader small>
                 <PageTitle small />
             </AppHeader>
+            {selectedCountry && <CountryInfo {...selectedCountry} />}
             <Canvas camera={{ position: defaultCameraPosition, fov: 40 }}>
                 <color attach="background" args={['black']} />
                 <CameraControls />
@@ -103,7 +125,7 @@ export default function Globe() {
                 <spotLight position={[1, 1, 1]} angle={0.15} penumbra={1} />
                 <pointLight position={[-2, -1, -1]} />
                 <Suspense fallback={null}>
-                    <Earth />
+                    <Earth setSelectedCountry={setSelectedCountry} />
                 </Suspense>
             </Canvas>
             <AppFooter />

@@ -19,3 +19,12 @@ body,
 body {
     background: white;
 }
+
+.countryInfo {
+    padding: 0 10px;
+    display: flex;
+    flex: 1;
+    place-content: flex-end;
+    background: #000;
+    color: white;
+}
