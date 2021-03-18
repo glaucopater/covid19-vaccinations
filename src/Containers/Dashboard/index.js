@@ -46,7 +46,7 @@ const Dashboard = () => {
                     <h1>
                         <PageTitle />
                     </h1>
-                    {world && <h2> Total 💉{world.vaccinations.toLocaleString()}</h2>}
+                    {world && <h1> Total 💉{world.vaccinations.toLocaleString()}</h1>}
                 </AppHeader>
                 <main className="App-grid">
                     <BarChart className="App-grid-item" option={barOptionEurope} />

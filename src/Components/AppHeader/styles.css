@@ -2,7 +2,8 @@
     background-color: #222;
     padding: 20px;
     color: white;
-    margin: 0;
+    display: flex;
+    place-content: space-between;
 }
 
 .App-header small {
@@ -12,13 +13,13 @@
 .App-header h1 {
     display: flex;
     justify-content: space-between;
+    margin: 10px;
 }
 
 .App-header a {
     color: white;
     text-decoration: none;
     transition: all 1s ease-in;
-
 }
 
 .App-header a:hover {

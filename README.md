@@ -8,4 +8,4 @@
 - Ourworldindata : https://covid.ourworldindata.org/data/owid-covid-data.json
 
 # Libraries:
-- Made with React and Echarts
+-  React, Echarts, React-three-fiber, SWR
