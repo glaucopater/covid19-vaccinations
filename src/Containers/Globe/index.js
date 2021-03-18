@@ -1,16 +1,16 @@
 import React, { Suspense, useRef, useEffect } from 'react';
 import { Canvas, useLoader } from 'react-three-fiber';
-import { Controls } from '../../Components/Controls';
+import { CameraControls } from '../../Components/CameraControls';
 import * as THREE from 'three';
 import { RADIUS_SPHERE, convertLatLon, latLongToVector3 } from "../../Utils/three";
 import countriesData from "../../Store/countries.json";
-import "./styles.css";
 import { AppHeader } from "../../Components/AppHeader";
 import { PageTitle } from "../../Components/PageTitle";
 import { AppFooter } from "../../Components/AppFooter";
 import { useApi } from "../../Api/";
 import earth4 from './assets/earth4.jpg';
 import earth_bump from './assets/earth_bump.jpg';
+import "./styles.css";
 
 const LOOK_AT_COORDS = [0, 0, 0]
 
@@ -90,14 +90,15 @@ const Earth = () => {
 
 
 export default function Globe() {
+    const defaultCameraPosition = [10, 20, 0];
     return (
         <>
             <AppHeader small>
                 <PageTitle small />
             </AppHeader>
-            <Canvas camera={{ position: [0, 10, 20], fov: 40 }}>
+            <Canvas camera={{ position: defaultCameraPosition, fov: 40 }}>
                 <color attach="background" args={['black']} />
-                <Controls />
+                <CameraControls />
                 <ambientLight intensity={0.9} />
                 <spotLight position={[1, 1, 1]} angle={0.15} penumbra={1} />
                 <pointLight position={[-2, -1, -1]} />
