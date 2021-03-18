@@ -9,8 +9,8 @@ import { AppHeader } from "../../Components/AppHeader";
 import { PageTitle } from "../../Components/PageTitle";
 import { AppFooter } from "../../Components/AppFooter";
 import { useApi } from "../../Api/";
-
-const makeUrl = (file) => `https://raw.githubusercontent.com/flowers1225/threejs-earth/master/src/img/${file}.jpg`
+import earth4 from './assets/earth4.jpg';
+import earth_bump from './assets/earth_bump.jpg';
 
 const LOOK_AT_COORDS = [0, 0, 0]
 
@@ -38,7 +38,7 @@ const Earth = () => {
 
     const { apiData, isError } = useApi();
     const ref = useRef();
-    const [texture, bump] = useLoader(THREE.TextureLoader, [makeUrl('earth4'), makeUrl('earth_bump')])
+    const [texture, bump] = useLoader(THREE.TextureLoader, [earth4, earth_bump])
 
     if (isError) {
         return <group ref={ref} name="error"></group>

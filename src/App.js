@@ -11,11 +11,11 @@ const LazyGlobe = React.lazy(() => import('./Containers/Globe'));
 
 const App = () => {
   return (
-    <React.Suspense fallback={<span>Loading. . .</span>}>
+    <React.Suspense fallback={<span>Loading...</span>}>
       <Router>
         <Switch>
-          <Route exact path="/" component={Dashboard} />
-          <Route path="/globe" component={LazyGlobe} />
+          <Route exact path="/globe" component={LazyGlobe} />
+          <Route path="/" component={Dashboard} />
         </Switch>
       </Router>
     </React.Suspense>
