@@ -1,8 +1,11 @@
 # Covid-19 Vaccination chart by Country 📊💉🌍
 
-## [Live](https://amazing-yalow-966cc3.netlify.app/) 🔥
+## [Live](https://www.covidvaccination.tk) 🔥
 
 ![Demo](/public/vaccinations.jpg)
+
+3D Demo
+![Demo](/public/covidVaccinationGlobe.jpg)
 
 # Data Source
 - Ourworldindata : https://covid.ourworldindata.org/data/owid-covid-data.json
