@@ -14,13 +14,9 @@ import "./styles.css";
 
 const LOOK_AT_COORDS = [0, 0, 0];
 
-// definition of country size:
-// 1 bilion : 0.3
-// 1 milion -> 100 milions : 0.2
-// 100k -> 1 milions 0.1
-
 const Vaccination3dBar = ({ position, onClick, vaccinations, population }) => {
     const mesh = useRef();
+    const [isHovered, setIsOvered] = React.useState(false);
     useEffect(() => {
         mesh.current.lookAt(...LOOK_AT_COORDS)
     }, [mesh])
@@ -40,9 +36,12 @@ const Vaccination3dBar = ({ position, onClick, vaccinations, population }) => {
             position={position}
             ref={mesh}
             scale={defaultScale}
-            onClick={onClick}>
+            onClick={onClick}
+            onTouchStart={onClick}
+            onPointerOver={(e) => setIsOvered(true)}
+            onPointerOut={(e) => setIsOvered(false)}>
             <boxBufferGeometry args={boxDimensions} />
-            <meshNormalMaterial />
+            <meshStandardMaterial transparent color={isHovered ? '#ff0000' : '#30ff30'} />
         </mesh>
     )
 }
