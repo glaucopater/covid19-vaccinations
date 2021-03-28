@@ -4,9 +4,9 @@ import { CameraControls } from '../../Components/CameraControls';
 import * as THREE from 'three';
 import { RADIUS_SPHERE, convertLatLon, latLongToVector3 } from "../../Utils/three";
 import countriesData from "../../Store/countries.json";
-import { AppHeader } from "../../Components/AppHeader";
+import { Header } from "../../Components/Header";
 import { PageTitle } from "../../Components/PageTitle";
-import { AppFooter } from "../../Components/AppFooter";
+import { Footer } from "../../Components/Footer";
 import { useApi } from "../../Api/";
 import earth4 from './assets/earth4.jpg';
 import earth_bump from './assets/earth_bump.jpg';
@@ -113,9 +113,9 @@ export default function Globe() {
 
     return (
         <>
-            <AppHeader small>
+            <Header small>
                 <PageTitle small />
-            </AppHeader>
+            </Header>
             {selectedCountry && <CountryInfo {...selectedCountry} />}
             <Canvas camera={{ position: defaultCameraPosition, fov: 40 }}>
                 <color attach="background" args={['black']} />
@@ -127,7 +127,7 @@ export default function Globe() {
                     <Earth setSelectedCountry={setSelectedCountry} />
                 </Suspense>
             </Canvas>
-            <AppFooter />
+            <Footer />
         </>
     )
 }
