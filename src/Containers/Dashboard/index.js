@@ -4,28 +4,21 @@ import { useApi } from "../../Api";
 import { getAggregatedData, getCountriesDataByContinent, getWorldData } from "../../Utils/dashboard"
 import { getBarOption } from "../../Charts/BarChart/helpers";
 import { BarChart } from "../../Charts/BarChart";
-import { AppHeader } from "../../Components/AppHeader";
+import { Header } from "../../Components/Header";
 import { PageTitle } from "../../Components/PageTitle";
-import { AppFooter } from "../../Components/AppFooter";
+import { Footer } from "../../Components/Footer";
 
 const Dashboard = () => {
     const { apiData, isError } = useApi();
 
-    if (isError)
-        return (
-            <AppHeader>
-                <PageTitle />
-                <span>Failed to load!</span>
-            </AppHeader>
-        );
 
-    if (!apiData) {
+    if (isError || !apiData)
         return (
-            <AppHeader>
+            <Header>
                 <PageTitle />
-                <span>Loading...</span>
-            </AppHeader>);
-    }
+                <span>{isError ? "Failed to load!" : "Loading..."}</span>
+            </Header>
+        );
     else {
         const world = getWorldData(apiData);
         const barOptionsData = ["Europe", "Asia", "Africa", "North America", "South America", "Oceania"].map(country => {
@@ -42,12 +35,12 @@ const Dashboard = () => {
 
         return (
             <>
-                <AppHeader>
+                <Header>
                     <h1>
                         <PageTitle />
                     </h1>
                     {world && <h1> Total 💉{world.vaccinations.toLocaleString()}</h1>}
-                </AppHeader>
+                </Header>
                 <main className="App-grid">
                     <BarChart className="App-grid-item" option={barOptionEurope} />
                     <BarChart className="App-grid-item" option={barOptionAsia} />
@@ -56,7 +49,7 @@ const Dashboard = () => {
                     {countriesDataSouthAmerica.length > 0 && <BarChart className="App-grid-item" option={barOptionSouthAmerica} />}
                     {countriesDataOceania.length > 0 && <BarChart className="App-grid-item" option={barOptionOceania} />}
                 </main>
-                <AppFooter world={world} />
+                <Footer world={world} />
             </>
         )
     }
