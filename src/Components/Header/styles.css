@@ -30,6 +30,9 @@
 @media (max-width:400px) {
     .App-header {
         padding: 10px;
+        display: flex;
+        place-content: center;
+        place-items: center;
     }
 
     .App-header h1 {
