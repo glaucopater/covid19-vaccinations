@@ -73,10 +73,10 @@ const Earth = ({ setSelectedCountry }) => {
         }
     })
 
-    const handleOnClick = (e, name, point, vaccinations, population) => {
+    const handleOnClick = (e, name, _, vaccinations, population) => {
         setSelectedCountry({ name, population, vaccinations });
-        console.log(name, point, population.toLocaleString(), vaccinations.toLocaleString(),
-            e.point.x, e.point.y, e.point.z, convertLatLon([e.point.x, e.point.y, e.point.z]))
+        console.table(name, "population " + population.toLocaleString(), "vaccinations " + vaccinations.toLocaleString(),
+            "LatLong: " + convertLatLon([e.point.x, e.point.y, e.point.z]))
     }
 
 

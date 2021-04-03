@@ -4,6 +4,7 @@
     color: white;
     display: flex;
     place-content: space-between;
+    place-items: center;
 }
 
 .App-header small {
