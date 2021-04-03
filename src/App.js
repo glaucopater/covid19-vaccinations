@@ -5,13 +5,10 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import { LoadingPage } from "./Components/Loading";
 import "./App.css";
 const LazyGlobe = React.lazy(() => import('./Containers/Globe'));
 
-export const LoadingPage = () =>
-  <div className="loadingPage">
-    <span>Loading...</span>
-  </div>
 
 const App = () => {
   return (

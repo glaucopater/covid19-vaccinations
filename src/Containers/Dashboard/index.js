@@ -8,9 +8,10 @@ import { Header } from "../../Components/Header";
 import { PageTitle } from "../../Components/PageTitle";
 import { Footer } from "../../Components/Footer";
 
-const Dashboard = () => {
-    const { apiData, isError } = useApi();
+const availableContinents = ["Europe", "Asia", "Africa", "North America", "South America", "Oceania"];
 
+const Dashboard = () => {
+    const { apiData, isError, isLoading } = useApi();
 
     if (isError || !apiData)
         return (
@@ -20,18 +21,11 @@ const Dashboard = () => {
             </Header>
         );
     else {
-        const world = getWorldData(apiData);
-        const barOptionsData = ["Europe", "Asia", "Africa", "North America", "South America", "Oceania"].map(country => {
+        const worldData = getWorldData(apiData);
+        const barOptionsData = availableContinents.map(country => {
             const countryData = getCountriesDataByContinent(apiData, country);
             return [countryData, getBarOption(getAggregatedData(countryData))];
         })
-
-        const [, barOptionEurope] = barOptionsData[0];
-        const [, barOptionAsia] = barOptionsData[1];
-        const [countriesDataAfrica, barOptionAfrica] = barOptionsData[2];
-        const [countriesDataNorthAmerica, barOptionNorthAmerica] = barOptionsData[3];
-        const [countriesDataSouthAmerica, barOptionSouthAmerica] = barOptionsData[4];
-        const [countriesDataOceania, barOptionOceania] = barOptionsData[5];
 
         return (
             <>
@@ -39,17 +33,12 @@ const Dashboard = () => {
                     <h1>
                         <PageTitle />
                     </h1>
-                    {world && <h1> Total 💉{world.vaccinations.toLocaleString()}</h1>}
+                    {worldData && <h1> Total 💉{worldData.vaccinations.toLocaleString()}</h1>}
                 </Header>
                 <main className="App-grid">
-                    <BarChart className="App-grid-item" option={barOptionEurope} />
-                    <BarChart className="App-grid-item" option={barOptionAsia} />
-                    {countriesDataAfrica.length > 0 && <BarChart className="App-grid-item" option={barOptionAfrica} />}
-                    {countriesDataNorthAmerica.length > 0 && <BarChart className="App-grid-item" option={barOptionNorthAmerica} />}
-                    {countriesDataSouthAmerica.length > 0 && <BarChart className="App-grid-item" option={barOptionSouthAmerica} />}
-                    {countriesDataOceania.length > 0 && <BarChart className="App-grid-item" option={barOptionOceania} />}
+                    {barOptionsData.map(([continentData, barOptionData], index) => continentData.length > 0 && <BarChart key={index.toString()} className="App-grid-item" option={barOptionData} />)}
                 </main>
-                <Footer world={world} />
+                <Footer world={worldData} />
             </>
         )
     }
