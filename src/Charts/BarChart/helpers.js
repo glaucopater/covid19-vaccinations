@@ -36,6 +36,9 @@ export const getBarOption = ([aggregatedData, statsDate]) => {
             axisPointer: {
                 type: "shadow"
             },
+            showBackground: true,
+            backgroundColor: 'rgba(255, 255, 255, 0.8)'
+            ,
             formatter: (params) => tooltipFormatter(params, aggregatedData, statsDate)
         },
         grid: {
