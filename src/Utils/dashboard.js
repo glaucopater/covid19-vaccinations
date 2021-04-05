@@ -24,7 +24,7 @@ export const getAggregatedData = (countriesData) => {
     });
 
 
-    const filteredAggregatedData = aggregatedData.filter(country => country.totalCases && country.totalCases > 0)
+    const filteredAggregatedData = aggregatedData.filter(country => country.totalCases && country.totalCases > 0 && country.population > 100000)
     const dates = filteredAggregatedData && filteredAggregatedData.map(d => new Date(d.lastUpdate)) || [];
     const statsDate = dates.length > 0 && (new Date(Math.max.apply(null, dates))).toISOString().split('T')[0] || "";
 
