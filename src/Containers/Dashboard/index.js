@@ -36,7 +36,8 @@ const Dashboard = () => {
                     {worldData && <h1> Total 💉{worldData.vaccinations.toLocaleString()}</h1>}
                 </Header>
                 <main className="App-grid">
-                    {barOptionsData.map(([continentData, barOptionData], index) => continentData.length > 0 && <BarChart key={index.toString()} className="App-grid-item" option={barOptionData} />)}
+                    {barOptionsData.map(([continentData, barOptionData], index) => continentData.length > 0
+                        && <BarChart key={index.toString()} className="App-grid-item" option={barOptionData} />)}
                 </main>
                 <Footer world={worldData} />
             </>
