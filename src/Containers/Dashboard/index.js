@@ -11,7 +11,8 @@ import { Footer } from "../../Components/Footer";
 const availableContinents = ["Europe", "Asia", "Africa", "North America", "South America", "Oceania"];
 
 const Dashboard = () => {
-    const { apiData, isError, isLoading } = useApi();
+    const { apiData, isError } = useApi();
+
 
     if (isError || !apiData)
         return (
@@ -25,7 +26,7 @@ const Dashboard = () => {
         const barOptionsData = availableContinents.map(country => {
             const countryData = getCountriesDataByContinent(apiData, country);
             return [countryData, getBarOption(getAggregatedData(countryData))];
-        })
+        });
 
         return (
             <>
