@@ -18,11 +18,11 @@ const tooltipFormatter = (params, aggregatedData, statsDate) => {
     let content = '<p><b>' + params[0].axisValue + '</b></p>';
     [params[0]].forEach(item => {
         content += getContent({ label: "Population", value: population });
-        content += getContent({ label: "Vaccinations", value: vaccinations });
+        content += getContent({ label: "Fully Vaccinated", value: vaccinations });
         content += getContent({ label: "Total Cases", value: totalCases });
         content += getContent({ label: "New Cases", value: newCases });
         if (item.seriesIndex === 0)
-            content += getContent({ label: "Vaccinated", value: getPercentage(item) + '%' });
+            content += getContent({ label: "Fully Vaccinated", value: getPercentage(item) + '%' });
         content += getContent({ label: "Last Update", value: lastUpdate, isOld: checkIsOldDate(lastUpdate, statsDate) });
     });
     return content;
@@ -65,14 +65,14 @@ export const getBarOption = ([aggregatedData, statsDate]) => {
         ],
         legend: {
             selected: {
-                'Population Vaccinated %': true,
+                'Population Fully Vaccinated %': true,
                 'Infections': false,
                 'New cases': false,
             }
         },
         series: [
             {
-                name: 'Vaccinated %',
+                name: 'Fully Vaccinated %',
                 type: 'bar',
                 stack: 'total',
                 itemStyle: {

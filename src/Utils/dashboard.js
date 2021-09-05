@@ -11,8 +11,8 @@ export const getAggregatedData = (countriesData) => {
             continent: c.continent,
             country: c.location,
             population: c.population,
-            vaccinations: c.vaccinations,
-            vaccinationsPerPopulation: (c.vaccinations * 100 / c.population),
+            vaccinations: c.people_fully_vaccinated,
+            vaccinationsPerPopulation: (c.people_fully_vaccinated * 100 / c.population),
             newCases: c.newCases,
             totalCases: c.totalCases,
             lastUpdate: c.date
