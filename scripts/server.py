@@ -10,7 +10,7 @@ with open(filename) as json_file:
 
 
 def getResult():
-    query = '*.{location: location,total_vaccinations: data[?total_vaccinations!=null]}[?length(total_vaccinations)>"0"].{location: location, tv: length(total_vaccinations), total_vaccinations: total_vaccinations[-1].total_vaccinations}'
+    query = '*.{location: location,people_fully_vaccinated: data[?people_fully_vaccinated!=null]}[?length(people_fully_vaccinated)>"0"].{location: location, tv: length(people_fully_vaccinated), people_fully_vaccinated: people_fully_vaccinated[-1].people_fully_vaccinated}'
     result = jmespath.search(query, jsonContent)
     return json.dumps(result)
 
