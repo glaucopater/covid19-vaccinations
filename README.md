@@ -8,7 +8,9 @@
 ![Demo](/public/covidVaccinationGlobe.jpg)
 
 # Data Source
+
 - Ourworldindata : https://covid.ourworldindata.org/data/owid-covid-data.json
 
 # Libraries:
--  React, Echarts, React-three-fiber, SWR
+
+- React, Echarts, React-three-fiber, SWR

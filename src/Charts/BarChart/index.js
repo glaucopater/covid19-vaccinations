@@ -1,2 +1,2 @@
-import BarChart from "./template";
+import BarChart from './template';
 export { BarChart };
