@@ -1,16 +1,16 @@
 .itemLabel {
-    display: inline-block;
-    margin-right: 5px;
-    border-radius: 10px;
-    width: 9px;
-    height: 9px;
-    background-color: #0000FF;
+  display: inline-block;
+  margin-right: 5px;
+  border-radius: 10px;
+  width: 9px;
+  height: 9px;
+  background-color: #0000ff;
 }
 
 .itemOld {
-    color: red;
+  color: red;
 }
 
 .itemOld::after {
-    content: '🕒';
+  content: '🕒';
 }
