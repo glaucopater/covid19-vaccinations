@@ -7,10 +7,10 @@ import countriesData from '../../Store/countries.json';
 import { Header } from '../../Components/Header';
 import { PageTitle } from '../../Components/PageTitle';
 import { Footer } from '../../Components/Footer';
-import { useApi } from '../../Api/';
 import earth4 from './assets/earth4.jpg';
 import earth_bump from './assets/earth_bump.jpg';
 import './styles.css';
+import apiData from '../../data/apiData.json';
 
 const LOOK_AT_COORDS = [0, 0, 0];
 
@@ -46,15 +46,10 @@ const Vaccination3dBar = ({ position, onClick, vaccinations, population }) => {
 };
 
 const Earth = ({ setSelectedCountry }) => {
-  const { apiData, isError } = useApi();
   const ref = useRef();
   const [texture, bump] = useLoader(THREE.TextureLoader, [earth4, earth_bump]);
   const radium = RADIUS_SPHERE;
-
-  if (isError) {
-    return <group ref={ref} name="error"></group>;
-  }
-
+  
   if (!apiData || apiData === []) {
     return <group ref={ref} name="loading"></group>;
   }
