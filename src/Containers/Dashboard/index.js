@@ -1,6 +1,5 @@
 import React from 'react';
 import '../../App.css';
-import { useApi } from '../../Api';
 import { getAggregatedData, getCountriesDataByContinent, getWorldData } from '../../Utils/dashboard';
 import { getBarOption } from '../../Charts/BarChart/helpers';
 import { BarChart } from '../../Charts/BarChart';
@@ -8,12 +7,12 @@ import { Header } from '../../Components/Header';
 import { PageTitle } from '../../Components/PageTitle';
 import { Footer } from '../../Components/Footer';
 
+import apiData from '../../data/apiData.json';
+
 const availableContinents = ['Europe', 'Asia', 'Africa', 'North America', 'South America', 'Oceania'];
 
 const Dashboard = () => {
-  const { apiData, isError } = useApi();
-
-  if (isError || !apiData)
+  if (!apiData)
     return (
       <Header>
         <PageTitle />
