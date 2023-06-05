@@ -1,0 +1,2552 @@
+[
+    {
+        "continent": "Asia",
+        "date": "2023-05-29",
+        "location": "Afghanistan",
+        "newCases": 152,
+        "people_fully_vaccinated": 15168758,
+        "population": 41128772,
+        "totalCases": 221332,
+        "vaccinations": 18434710
+    },
+    {
+        "continent": null,
+        "date": "2023-05-30",
+        "location": "Africa",
+        "newCases": 3,
+        "people_fully_vaccinated": 436763908,
+        "population": 1426736614,
+        "totalCases": 13090531,
+        "vaccinations": 807471179
+    },
+    {
+        "continent": "Europe",
+        "date": "2023-05-14",
+        "location": "Albania",
+        "newCases": 0,
+        "people_fully_vaccinated": 1277987,
+        "population": 2842318,
+        "totalCases": 334090,
+        "vaccinations": 3080679
+    },
+    {
+        "continent": "Africa",
+        "date": "2022-09-04",
+        "location": "Algeria",
+        "newCases": 21,
+        "people_fully_vaccinated": 6481186,
+        "population": 44903228,
+        "totalCases": 270426,
+        "vaccinations": 15267442
+    },
+    {
+        "continent": "Oceania",
+        "date": null,
+        "location": "American Samoa",
+        "newCases": null,
+        "people_fully_vaccinated": null,
+        "population": 44295,
+        "totalCases": null,
+        "vaccinations": null
+    },
+    {
+        "continent": "Europe",
+        "date": "2023-04-09",
+        "location": "Andorra",
+        "newCases": 0,
+        "people_fully_vaccinated": 53496,
+        "population": 79843,
+        "totalCases": 47939,
+        "vaccinations": 157038
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-05-21",
+        "location": "Angola",
+        "newCases": 0,
+        "people_fully_vaccinated": 8821410,
+        "population": 35588996,
+        "totalCases": 105384,
+        "vaccinations": 25552936
+    },
+    {
+        "continent": "North America",
+        "date": "2023-03-10",
+        "location": "Anguilla",
+        "newCases": 0,
+        "people_fully_vaccinated": 10380,
+        "population": 15877,
+        "totalCases": 3904,
+        "vaccinations": 24604
+    },
+    {
+        "continent": "North America",
+        "date": "2022-09-16",
+        "location": "Antigua and Barbuda",
+        "newCases": 0,
+        "people_fully_vaccinated": 62384,
+        "population": 93772,
+        "totalCases": 9008,
+        "vaccinations": 136512
+    },
+    {
+        "continent": "South America",
+        "date": "2023-06-02",
+        "location": "Argentina",
+        "newCases": null,
+        "people_fully_vaccinated": 34880525,
+        "population": 45510324,
+        "totalCases": null,
+        "vaccinations": 115701973
+    },
+    {
+        "continent": "Asia",
+        "date": "2023-05-14",
+        "location": "Armenia",
+        "newCases": 0,
+        "people_fully_vaccinated": 996169,
+        "population": 2780472,
+        "totalCases": 449148,
+        "vaccinations": 2156999
+    },
+    {
+        "continent": "North America",
+        "date": "2023-06-02",
+        "location": "Aruba",
+        "newCases": null,
+        "people_fully_vaccinated": 84298,
+        "population": 106459,
+        "totalCases": null,
+        "vaccinations": 174747
+    },
+    {
+        "continent": null,
+        "date": "2023-06-03",
+        "location": "Asia",
+        "newCases": null,
+        "people_fully_vaccinated": 3444522611,
+        "population": 4721383370,
+        "totalCases": null,
+        "vaccinations": 9028119563
+    },
+    {
+        "continent": "Oceania",
+        "date": "2023-03-24",
+        "location": "Australia",
+        "newCases": 0,
+        "people_fully_vaccinated": 21648824,
+        "population": 26177410,
+        "totalCases": 11103316,
+        "vaccinations": 65492360
+    },
+    {
+        "continent": "Europe",
+        "date": "2023-05-19",
+        "location": "Austria",
+        "newCases": 372,
+        "people_fully_vaccinated": 6683091,
+        "population": 8939617,
+        "totalCases": 6073598,
+        "vaccinations": 20464490
+    },
+    {
+        "continent": "Asia",
+        "date": "2022-08-28",
+        "location": "Azerbaijan",
+        "newCases": 428,
+        "people_fully_vaccinated": 4862494,
+        "population": 10358078,
+        "totalCases": 811559,
+        "vaccinations": 13857111
+    },
+    {
+        "continent": "North America",
+        "date": "2023-05-12",
+        "location": "Bahamas",
+        "newCases": 0,
+        "people_fully_vaccinated": 166972,
+        "population": 409989,
+        "totalCases": 38084,
+        "vaccinations": 366359
+    },
+    {
+        "continent": "Asia",
+        "date": "2022-12-21",
+        "location": "Bahrain",
+        "newCases": 0,
+        "people_fully_vaccinated": 1226796,
+        "population": 1472237,
+        "totalCases": 696614,
+        "vaccinations": 3476633
+    },
+    {
+        "continent": "Asia",
+        "date": "2023-06-03",
+        "location": "Bangladesh",
+        "newCases": null,
+        "people_fully_vaccinated": 140334521,
+        "population": 171186368,
+        "totalCases": null,
+        "vaccinations": 358586742
+    },
+    {
+        "continent": "North America",
+        "date": "2023-05-05",
+        "location": "Barbados",
+        "newCases": 0,
+        "people_fully_vaccinated": 155036,
+        "population": 281646,
+        "totalCases": 107466,
+        "vaccinations": 381715
+    },
+    {
+        "continent": "Europe",
+        "date": "2023-04-16",
+        "location": "Belarus",
+        "newCases": 0,
+        "people_fully_vaccinated": 6354262,
+        "population": 9534956,
+        "totalCases": 994037,
+        "vaccinations": 21205264
+    },
+    {
+        "continent": "Europe",
+        "date": "2023-05-27",
+        "location": "Belgium",
+        "newCases": 0,
+        "people_fully_vaccinated": 9168920,
+        "population": 11655923,
+        "totalCases": 4799107,
+        "vaccinations": 29633957
+    },
+    {
+        "continent": "North America",
+        "date": "2023-04-21",
+        "location": "Belize",
+        "newCases": 0,
+        "people_fully_vaccinated": 221401,
+        "population": 405285,
+        "totalCases": 70782,
+        "vaccinations": 510717
+    },
+    {
+        "continent": "Africa",
+        "date": "2022-12-18",
+        "location": "Benin",
+        "newCases": 0,
+        "people_fully_vaccinated": 2742837,
+        "population": 13352864,
+        "totalCases": 27982,
+        "vaccinations": 4232541
+    },
+    {
+        "continent": "North America",
+        "date": "2022-07-08",
+        "location": "Bermuda",
+        "newCases": 239,
+        "people_fully_vaccinated": 47657,
+        "population": 64207,
+        "totalCases": 16401,
+        "vaccinations": 132042
+    },
+    {
+        "continent": "Asia",
+        "date": "2022-10-30",
+        "location": "Bhutan",
+        "newCases": 49,
+        "people_fully_vaccinated": 677669,
+        "population": 782457,
+        "totalCases": 62380,
+        "vaccinations": 2011426
+    },
+    {
+        "continent": "South America",
+        "date": "2022-10-07",
+        "location": "Bolivia",
+        "newCases": 55,
+        "people_fully_vaccinated": 6160585,
+        "population": 12224114,
+        "totalCases": 1108527,
+        "vaccinations": 14690530
+    },
+    {
+        "continent": "North America",
+        "date": "2021-09-01",
+        "location": "Bonaire Sint Eustatius and Saba",
+        "newCases": 0,
+        "people_fully_vaccinated": 16736,
+        "population": 27052,
+        "totalCases": 1783,
+        "vaccinations": 35845
+    },
+    {
+        "continent": "Europe",
+        "date": "2022-01-29",
+        "location": "Bosnia and Herzegovina",
+        "newCases": 2073,
+        "people_fully_vaccinated": 846080,
+        "population": 3233530,
+        "totalCases": 343986,
+        "vaccinations": 1924950
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-05-07",
+        "location": "Botswana",
+        "newCases": 6,
+        "people_fully_vaccinated": 1663490,
+        "population": 2630300,
+        "totalCases": 329862,
+        "vaccinations": 3171667
+    },
+    {
+        "continent": "South America",
+        "date": "2023-03-22",
+        "location": "Brazil",
+        "newCases": 0,
+        "people_fully_vaccinated": 176164186,
+        "population": 215313504,
+        "totalCases": 37204677,
+        "vaccinations": 486436436
+    },
+    {
+        "continent": "North America",
+        "date": "2022-09-16",
+        "location": "British Virgin Islands",
+        "newCases": 0,
+        "people_fully_vaccinated": 18261,
+        "population": 31332,
+        "totalCases": 7305,
+        "vaccinations": 41453
+    },
+    {
+        "continent": "Asia",
+        "date": "2023-04-28",
+        "location": "Brunei",
+        "newCases": 0,
+        "people_fully_vaccinated": 446630,
+        "population": 449002,
+        "totalCases": 288051,
+        "vaccinations": 1291978
+    },
+    {
+        "continent": "Europe",
+        "date": "2023-06-03",
+        "location": "Bulgaria",
+        "newCases": null,
+        "people_fully_vaccinated": 2077673,
+        "population": 6781955,
+        "totalCases": null,
+        "vaccinations": 4612879
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-03-19",
+        "location": "Burkina Faso",
+        "newCases": 0,
+        "people_fully_vaccinated": 4129254,
+        "population": 22673764,
+        "totalCases": 22056,
+        "vaccinations": 6674010
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-05-14",
+        "location": "Burundi",
+        "newCases": 0,
+        "people_fully_vaccinated": 36321,
+        "population": 12889583,
+        "totalCases": 53749,
+        "vaccinations": 39182
+    },
+    {
+        "continent": "Asia",
+        "date": "2023-05-26",
+        "location": "Cambodia",
+        "newCases": 0,
+        "people_fully_vaccinated": 14660594,
+        "population": 16767851,
+        "totalCases": 138750,
+        "vaccinations": 47030856
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-05-07",
+        "location": "Cameroon",
+        "newCases": 0,
+        "people_fully_vaccinated": 3107836,
+        "population": 27914542,
+        "totalCases": 125036,
+        "vaccinations": 4735141
+    },
+    {
+        "continent": "North America",
+        "date": "2023-02-02",
+        "location": "Canada",
+        "newCases": 0,
+        "people_fully_vaccinated": 31762130,
+        "population": 38454328,
+        "totalCases": 4551243,
+        "vaccinations": 96956502
+    },
+    {
+        "continent": "Africa",
+        "date": "2022-09-25",
+        "location": "Cape Verde",
+        "newCases": 0,
+        "people_fully_vaccinated": 308720,
+        "population": 593162,
+        "totalCases": 62359,
+        "vaccinations": 859940
+    },
+    {
+        "continent": "North America",
+        "date": "2023-04-21",
+        "location": "Cayman Islands",
+        "newCases": 0,
+        "people_fully_vaccinated": 60664,
+        "population": 68722,
+        "totalCases": 31472,
+        "vaccinations": 151822
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-05-21",
+        "location": "Central African Republic",
+        "newCases": 0,
+        "people_fully_vaccinated": 2266531,
+        "population": 5579148,
+        "totalCases": 15367,
+        "vaccinations": 2914105
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-05-14",
+        "location": "Chad",
+        "newCases": 0,
+        "people_fully_vaccinated": 6127422,
+        "population": 17723312,
+        "totalCases": 7698,
+        "vaccinations": 8547802
+    },
+    {
+        "continent": "South America",
+        "date": "2023-02-08",
+        "location": "Chile",
+        "newCases": 995,
+        "people_fully_vaccinated": 17700117,
+        "population": 19603736,
+        "totalCases": 5130204,
+        "vaccinations": 62688847
+    },
+    {
+        "continent": "Asia",
+        "date": "2023-02-09",
+        "location": "China",
+        "newCases": 21192,
+        "people_fully_vaccinated": 1276760000,
+        "population": 1425887360,
+        "totalCases": 98747282,
+        "vaccinations": 3491077000
+    },
+    {
+        "continent": "South America",
+        "date": "2023-04-07",
+        "location": "Colombia",
+        "newCases": 0,
+        "people_fully_vaccinated": 37019801,
+        "population": 51874028,
+        "totalCases": 6362312,
+        "vaccinations": 90506612
+    },
+    {
+        "continent": "Africa",
+        "date": "2022-10-02",
+        "location": "Comoros",
+        "newCases": 0,
+        "people_fully_vaccinated": 397080,
+        "population": 836783,
+        "totalCases": 8475,
+        "vaccinations": 835021
+    },
+    {
+        "continent": "Africa",
+        "date": "2022-07-31",
+        "location": "Congo",
+        "newCases": 0,
+        "people_fully_vaccinated": 654119,
+        "population": 5970430,
+        "totalCases": 24790,
+        "vaccinations": 833210
+    },
+    {
+        "continent": "Oceania",
+        "date": "2023-02-13",
+        "location": "Cook Islands",
+        "newCases": 1,
+        "people_fully_vaccinated": 14728,
+        "population": 17032,
+        "totalCases": 7023,
+        "vaccinations": 40854
+    },
+    {
+        "continent": "North America",
+        "date": "2023-04-21",
+        "location": "Costa Rica",
+        "newCases": 0,
+        "people_fully_vaccinated": 4347590,
+        "population": 5180836,
+        "totalCases": 1226315,
+        "vaccinations": 13148135
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-02-19",
+        "location": "Cote d'Ivoire",
+        "newCases": 11,
+        "people_fully_vaccinated": 12164304,
+        "population": 28160548,
+        "totalCases": 88109,
+        "vaccinations": 25263932
+    },
+    {
+        "continent": "Europe",
+        "date": "2023-05-28",
+        "location": "Croatia",
+        "newCases": 0,
+        "people_fully_vaccinated": 2251604,
+        "population": 4030361,
+        "totalCases": 1273671,
+        "vaccinations": 5361961
+    },
+    {
+        "continent": "North America",
+        "date": "2023-06-01",
+        "location": "Cuba",
+        "newCases": null,
+        "people_fully_vaccinated": 10019214,
+        "population": 11212198,
+        "totalCases": null,
+        "vaccinations": 44854414
+    },
+    {
+        "continent": "North America",
+        "date": "2023-05-12",
+        "location": "Curacao",
+        "newCases": 0,
+        "people_fully_vaccinated": 100885,
+        "population": 191173,
+        "totalCases": 45812,
+        "vaccinations": 260324
+    },
+    {
+        "continent": "Europe",
+        "date": "2023-02-22",
+        "location": "Cyprus",
+        "newCases": 0,
+        "people_fully_vaccinated": 646142,
+        "population": 896007,
+        "totalCases": 647031,
+        "vaccinations": 1798610
+    },
+    {
+        "continent": "Europe",
+        "date": "2023-06-03",
+        "location": "Czechia",
+        "newCases": null,
+        "people_fully_vaccinated": 6893297,
+        "population": 10493990,
+        "totalCases": null,
+        "vaccinations": 18625370
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-04-16",
+        "location": "Democratic Republic of Congo",
+        "newCases": 0,
+        "people_fully_vaccinated": 12873681,
+        "population": 99010216,
+        "totalCases": 95944,
+        "vaccinations": 16398195
+    },
+    {
+        "continent": "Europe",
+        "date": "2023-05-12",
+        "location": "Denmark",
+        "newCases": 109,
+        "people_fully_vaccinated": 4736323,
+        "population": 5882259,
+        "totalCases": 3412750,
+        "vaccinations": 15043606
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-04-18",
+        "location": "Djibouti",
+        "newCases": 0,
+        "people_fully_vaccinated": 351712,
+        "population": 1120851,
+        "totalCases": 15690,
+        "vaccinations": 392703
+    },
+    {
+        "continent": "North America",
+        "date": "2022-10-07",
+        "location": "Dominica",
+        "newCases": 13,
+        "people_fully_vaccinated": 30659,
+        "population": 72758,
+        "totalCases": 15760,
+        "vaccinations": 67647
+    },
+    {
+        "continent": "North America",
+        "date": "2023-05-31",
+        "location": "Dominican Republic",
+        "newCases": 0,
+        "people_fully_vaccinated": 6095810,
+        "population": 11228821,
+        "totalCases": 661176,
+        "vaccinations": 16306266
+    },
+    {
+        "continent": "South America",
+        "date": "2023-03-31",
+        "location": "Ecuador",
+        "newCases": 0,
+        "people_fully_vaccinated": 14240587,
+        "population": 18001002,
+        "totalCases": 1059009,
+        "vaccinations": 39564195
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-05-21",
+        "location": "Egypt",
+        "newCases": 0,
+        "people_fully_vaccinated": 42337175,
+        "population": 110990096,
+        "totalCases": 516023,
+        "vaccinations": 112673535
+    },
+    {
+        "continent": "North America",
+        "date": "2022-10-02",
+        "location": "El Salvador",
+        "newCases": 0,
+        "people_fully_vaccinated": 4344286,
+        "population": 6336393,
+        "totalCases": 201785,
+        "vaccinations": 11289175
+    },
+    {
+        "continent": "Europe",
+        "date": "2023-05-22",
+        "location": "England",
+        "newCases": null,
+        "people_fully_vaccinated": 42951064,
+        "population": 56550000,
+        "totalCases": null,
+        "vaccinations": 148468256
+    },
+    {
+        "continent": "Africa",
+        "date": "2022-07-24",
+        "location": "Equatorial Guinea",
+        "newCases": 0,
+        "people_fully_vaccinated": 214032,
+        "population": 1674916,
+        "totalCases": 16654,
+        "vaccinations": 488738
+    },
+    {
+        "continent": "Africa",
+        "date": null,
+        "location": "Eritrea",
+        "newCases": null,
+        "people_fully_vaccinated": null,
+        "population": 3684041,
+        "totalCases": null,
+        "vaccinations": null
+    },
+    {
+        "continent": "Europe",
+        "date": "2023-05-29",
+        "location": "Estonia",
+        "newCases": 11,
+        "people_fully_vaccinated": 861692,
+        "population": 1326064,
+        "totalCases": 618892,
+        "vaccinations": 2112287
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-05-21",
+        "location": "Eswatini",
+        "newCases": 0,
+        "people_fully_vaccinated": 426134,
+        "population": 1201680,
+        "totalCases": 74670,
+        "vaccinations": 867487
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-05-07",
+        "location": "Ethiopia",
+        "newCases": 4,
+        "people_fully_vaccinated": 37637944,
+        "population": 123379928,
+        "totalCases": 500853,
+        "vaccinations": 54041862
+    },
+    {
+        "continent": null,
+        "date": "2023-06-03",
+        "location": "Europe",
+        "newCases": null,
+        "people_fully_vaccinated": 493309973,
+        "population": 744807803,
+        "totalCases": null,
+        "vaccinations": 1384289120
+    },
+    {
+        "continent": null,
+        "date": "2023-06-03",
+        "location": "European Union",
+        "newCases": null,
+        "people_fully_vaccinated": 328176350,
+        "population": 450146793,
+        "totalCases": null,
+        "vaccinations": 942137301
+    },
+    {
+        "continent": "Europe",
+        "date": "2022-02-18",
+        "location": "Faeroe Islands",
+        "newCases": 521,
+        "people_fully_vaccinated": 40895,
+        "population": 53117,
+        "totalCases": 31102,
+        "vaccinations": 103894
+    },
+    {
+        "continent": "South America",
+        "date": "2021-04-14",
+        "location": "Falkland Islands",
+        "newCases": 0,
+        "people_fully_vaccinated": 1775,
+        "population": 3801,
+        "totalCases": 60,
+        "vaccinations": 4407
+    },
+    {
+        "continent": "Oceania",
+        "date": "2023-05-01",
+        "location": "Fiji",
+        "newCases": 0,
+        "people_fully_vaccinated": 641194,
+        "population": 929769,
+        "totalCases": 68921,
+        "vaccinations": 1555182
+    },
+    {
+        "continent": "Europe",
+        "date": "2023-05-31",
+        "location": "Finland",
+        "newCases": 0,
+        "people_fully_vaccinated": 4348021,
+        "population": 5540745,
+        "totalCases": 1479608,
+        "vaccinations": 13214538
+    },
+    {
+        "continent": "Europe",
+        "date": "2023-05-29",
+        "location": "France",
+        "newCases": 2284,
+        "people_fully_vaccinated": 53189177,
+        "population": 67813000,
+        "totalCases": 39034448,
+        "vaccinations": 154462264
+    },
+    {
+        "continent": "South America",
+        "date": null,
+        "location": "French Guiana",
+        "newCases": null,
+        "people_fully_vaccinated": null,
+        "population": 304568,
+        "totalCases": null,
+        "vaccinations": null
+    },
+    {
+        "continent": "Oceania",
+        "date": "2023-05-01",
+        "location": "French Polynesia",
+        "newCases": 70,
+        "people_fully_vaccinated": 186803,
+        "population": 306292,
+        "totalCases": 78518,
+        "vaccinations": 502952
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-02-05",
+        "location": "Gabon",
+        "newCases": 0,
+        "people_fully_vaccinated": 257471,
+        "population": 2388997,
+        "totalCases": 48981,
+        "vaccinations": 572672
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-03-19",
+        "location": "Gambia",
+        "newCases": 0,
+        "people_fully_vaccinated": 539186,
+        "population": 2705995,
+        "totalCases": 12606,
+        "vaccinations": 1444492
+    },
+    {
+        "continent": "Asia",
+        "date": "2022-10-13",
+        "location": "Georgia",
+        "newCases": 344,
+        "people_fully_vaccinated": 1276173,
+        "population": 3744385,
+        "totalCases": 1798327,
+        "vaccinations": 2930677
+    },
+    {
+        "continent": "Europe",
+        "date": "2023-04-07",
+        "location": "Germany",
+        "newCases": 2425,
+        "people_fully_vaccinated": 63563414,
+        "population": 83369840,
+        "totalCases": 38369481,
+        "vaccinations": 192221468
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-03-26",
+        "location": "Ghana",
+        "newCases": 0,
+        "people_fully_vaccinated": 10170298,
+        "population": 33475870,
+        "totalCases": 171412,
+        "vaccinations": 22384226
+    },
+    {
+        "continent": "Europe",
+        "date": "2022-12-16",
+        "location": "Gibraltar",
+        "newCases": 29,
+        "people_fully_vaccinated": 41465,
+        "population": 32677,
+        "totalCases": 20252,
+        "vaccinations": 132810
+    },
+    {
+        "continent": "Europe",
+        "date": "2023-06-03",
+        "location": "Greece",
+        "newCases": null,
+        "people_fully_vaccinated": 7645738,
+        "population": 10384972,
+        "totalCases": null,
+        "vaccinations": 22124067
+    },
+    {
+        "continent": "North America",
+        "date": "2022-03-14",
+        "location": "Greenland",
+        "newCases": 0,
+        "people_fully_vaccinated": 38511,
+        "population": 56494,
+        "totalCases": 11879,
+        "vaccinations": 79738
+    },
+    {
+        "continent": "North America",
+        "date": "2023-03-17",
+        "location": "Grenada",
+        "newCases": 0,
+        "people_fully_vaccinated": 39034,
+        "population": 125459,
+        "totalCases": 19680,
+        "vaccinations": 90686
+    },
+    {
+        "continent": "North America",
+        "date": null,
+        "location": "Guadeloupe",
+        "newCases": null,
+        "people_fully_vaccinated": null,
+        "population": 395762,
+        "totalCases": null,
+        "vaccinations": null
+    },
+    {
+        "continent": "Oceania",
+        "date": null,
+        "location": "Guam",
+        "newCases": null,
+        "people_fully_vaccinated": null,
+        "population": 171783,
+        "totalCases": null,
+        "vaccinations": null
+    },
+    {
+        "continent": "North America",
+        "date": "2023-05-12",
+        "location": "Guatemala",
+        "newCases": 0,
+        "people_fully_vaccinated": 7126305,
+        "population": 17843914,
+        "totalCases": 1248823,
+        "vaccinations": 20362104
+    },
+    {
+        "continent": "Europe",
+        "date": "2022-12-19",
+        "location": "Guernsey",
+        "newCases": 0,
+        "people_fully_vaccinated": 52710,
+        "population": 63329,
+        "totalCases": 33449,
+        "vaccinations": 178525
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-04-02",
+        "location": "Guinea",
+        "newCases": 0,
+        "people_fully_vaccinated": 4725982,
+        "population": 13859349,
+        "totalCases": 38430,
+        "vaccinations": 10645240
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-05-21",
+        "location": "Guinea-Bissau",
+        "newCases": 0,
+        "people_fully_vaccinated": 533741,
+        "population": 2105580,
+        "totalCases": 9614,
+        "vaccinations": 824250
+    },
+    {
+        "continent": "South America",
+        "date": "2023-02-17",
+        "location": "Guyana",
+        "newCases": 5,
+        "people_fully_vaccinated": 381984,
+        "population": 808727,
+        "totalCases": 73057,
+        "vaccinations": 960133
+    },
+    {
+        "continent": "North America",
+        "date": "2023-04-07",
+        "location": "Haiti",
+        "newCases": 0,
+        "people_fully_vaccinated": 294528,
+        "population": 11585003,
+        "totalCases": 34202,
+        "vaccinations": 608275
+    },
+    {
+        "continent": null,
+        "date": "2023-06-03",
+        "location": "High income",
+        "newCases": null,
+        "people_fully_vaccinated": 929335905,
+        "population": 1250514600,
+        "totalCases": null,
+        "vaccinations": 2815883753
+    },
+    {
+        "continent": "North America",
+        "date": "2023-05-05",
+        "location": "Honduras",
+        "newCases": 0,
+        "people_fully_vaccinated": 5853689,
+        "population": 10432858,
+        "totalCases": 472533,
+        "vaccinations": 16963148
+    },
+    {
+        "continent": "Asia",
+        "date": "2023-05-28",
+        "location": "Hong Kong",
+        "newCases": null,
+        "people_fully_vaccinated": 6800028,
+        "population": 7488863,
+        "totalCases": null,
+        "vaccinations": 20804837
+    },
+    {
+        "continent": "Europe",
+        "date": "2022-12-04",
+        "location": "Hungary",
+        "newCases": 0,
+        "people_fully_vaccinated": 6206710,
+        "population": 9967304,
+        "totalCases": 2166352,
+        "vaccinations": 16701238
+    },
+    {
+        "continent": "Europe",
+        "date": "2022-03-29",
+        "location": "Iceland",
+        "newCases": 673,
+        "people_fully_vaccinated": 290193,
+        "population": 372903,
+        "totalCases": 179545,
+        "vaccinations": 805469
+    },
+    {
+        "continent": "Asia",
+        "date": "2023-06-03",
+        "location": "India",
+        "newCases": null,
+        "people_fully_vaccinated": 951976387,
+        "population": 1417173120,
+        "totalCases": null,
+        "vaccinations": 2206685203
+    },
+    {
+        "continent": "Asia",
+        "date": "2023-01-17",
+        "location": "Indonesia",
+        "newCases": 357,
+        "people_fully_vaccinated": 172693321,
+        "population": 275501344,
+        "totalCases": 6726668,
+        "vaccinations": 444303130
+    },
+    {
+        "continent": "Asia",
+        "date": "2023-05-23",
+        "location": "Iran",
+        "newCases": 0,
+        "people_fully_vaccinated": 58562317,
+        "population": 88550568,
+        "totalCases": 7611224,
+        "vaccinations": 155369703
+    },
+    {
+        "continent": "Asia",
+        "date": "2023-01-02",
+        "location": "Iraq",
+        "newCases": 0,
+        "people_fully_vaccinated": 7944775,
+        "population": 44496124,
+        "totalCases": 2465545,
+        "vaccinations": 19557364
+    },
+    {
+        "continent": "Europe",
+        "date": "2023-05-24",
+        "location": "Ireland",
+        "newCases": 7,
+        "people_fully_vaccinated": 4062731,
+        "population": 5023108,
+        "totalCases": 1712015,
+        "vaccinations": 11122947
+    },
+    {
+        "continent": "Europe",
+        "date": "2022-06-23",
+        "location": "Isle of Man",
+        "newCases": 0,
+        "people_fully_vaccinated": 67106,
+        "population": 84534,
+        "totalCases": 33821,
+        "vaccinations": 189994
+    },
+    {
+        "continent": "Asia",
+        "date": "2023-05-04",
+        "location": "Israel",
+        "newCases": 199,
+        "people_fully_vaccinated": 6159825,
+        "population": 9449000,
+        "totalCases": 4822795,
+        "vaccinations": 18649248
+    },
+    {
+        "continent": "Europe",
+        "date": "2023-06-03",
+        "location": "Italy",
+        "newCases": null,
+        "people_fully_vaccinated": 47966388,
+        "population": 59037472,
+        "totalCases": null,
+        "vaccinations": 144574021
+    },
+    {
+        "continent": "North America",
+        "date": "2023-05-25",
+        "location": "Jamaica",
+        "newCases": 0,
+        "people_fully_vaccinated": 758800,
+        "population": 2827382,
+        "totalCases": 154938,
+        "vaccinations": 1525895
+    },
+    {
+        "continent": "Asia",
+        "date": "2023-05-07",
+        "location": "Japan",
+        "newCases": 6229,
+        "people_fully_vaccinated": 103380343,
+        "population": 123951696,
+        "totalCases": 33778993,
+        "vaccinations": 383747738
+    },
+    {
+        "continent": "Europe",
+        "date": "2023-01-29",
+        "location": "Jersey",
+        "newCases": 6,
+        "people_fully_vaccinated": 81882,
+        "population": 110796,
+        "totalCases": 66378,
+        "vaccinations": 266953
+    },
+    {
+        "continent": "Asia",
+        "date": "2022-08-21",
+        "location": "Jordan",
+        "newCases": 0,
+        "people_fully_vaccinated": 4558313,
+        "population": 11285875,
+        "totalCases": 1731549,
+        "vaccinations": 10057975
+    },
+    {
+        "continent": "Asia",
+        "date": "2022-03-03",
+        "location": "Kazakhstan",
+        "newCases": 311,
+        "people_fully_vaccinated": 9010266,
+        "population": 19397998,
+        "totalCases": 1391277,
+        "vaccinations": 20918681
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-04-02",
+        "location": "Kenya",
+        "newCases": 5,
+        "people_fully_vaccinated": 11090440,
+        "population": 54027484,
+        "totalCases": 342983,
+        "vaccinations": 23750431
+    },
+    {
+        "continent": "Oceania",
+        "date": "2023-02-20",
+        "location": "Kiribati",
+        "newCases": 0,
+        "people_fully_vaccinated": 81474,
+        "population": 131237,
+        "totalCases": 5013,
+        "vaccinations": 219980
+    },
+    {
+        "continent": "Europe",
+        "date": "2023-02-12",
+        "location": "Kosovo",
+        "newCases": 18,
+        "people_fully_vaccinated": 825082,
+        "population": 1782115,
+        "totalCases": 272659,
+        "vaccinations": 1837446
+    },
+    {
+        "continent": "Asia",
+        "date": "2023-05-30",
+        "location": "Kuwait",
+        "newCases": 0,
+        "people_fully_vaccinated": 3345802,
+        "population": 4268886,
+        "totalCases": 665931,
+        "vaccinations": 8260414
+    },
+    {
+        "continent": "Asia",
+        "date": "2023-06-03",
+        "location": "Kyrgyzstan",
+        "newCases": null,
+        "people_fully_vaccinated": 1387822,
+        "population": 6630621,
+        "totalCases": null,
+        "vaccinations": 3519177
+    },
+    {
+        "continent": "Asia",
+        "date": "2022-08-11",
+        "location": "Laos",
+        "newCases": 97,
+        "people_fully_vaccinated": 5222417,
+        "population": 7529477,
+        "totalCases": 212124,
+        "vaccinations": 11111066
+    },
+    {
+        "continent": "Europe",
+        "date": "2022-07-11",
+        "location": "Latvia",
+        "newCases": 214,
+        "people_fully_vaccinated": 1305976,
+        "population": 1850654,
+        "totalCases": 841132,
+        "vaccinations": 2895716
+    },
+    {
+        "continent": "Asia",
+        "date": "2022-12-22",
+        "location": "Lebanon",
+        "newCases": 83,
+        "people_fully_vaccinated": 2414223,
+        "population": 5489744,
+        "totalCases": 1221874,
+        "vaccinations": 5814699
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-03-19",
+        "location": "Lesotho",
+        "newCases": 0,
+        "people_fully_vaccinated": 938088,
+        "population": 2305826,
+        "totalCases": 34490,
+        "vaccinations": 1339097
+    },
+    {
+        "continent": "Africa",
+        "date": "2022-12-11",
+        "location": "Liberia",
+        "newCases": 0,
+        "people_fully_vaccinated": 3730967,
+        "population": 5302690,
+        "totalCases": 8043,
+        "vaccinations": 4460668
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-01-16",
+        "location": "Libya",
+        "newCases": 4,
+        "people_fully_vaccinated": 1236102,
+        "population": 6812344,
+        "totalCases": 507158,
+        "vaccinations": 3739158
+    },
+    {
+        "continent": "Europe",
+        "date": "2023-05-03",
+        "location": "Liechtenstein",
+        "newCases": 0,
+        "people_fully_vaccinated": null,
+        "population": 39355,
+        "totalCases": 21465,
+        "vaccinations": 74330
+    },
+    {
+        "continent": "Europe",
+        "date": "2023-06-02",
+        "location": "Lithuania",
+        "newCases": null,
+        "people_fully_vaccinated": 1880536,
+        "population": 2750058,
+        "totalCases": null,
+        "vaccinations": 4546000
+    },
+    {
+        "continent": null,
+        "date": "2023-05-29",
+        "location": "Low income",
+        "newCases": 165,
+        "people_fully_vaccinated": 189238176,
+        "population": 737604900,
+        "totalCases": 2304146,
+        "vaccinations": 298500789
+    },
+    {
+        "continent": null,
+        "date": "2023-06-03",
+        "location": "Lower middle income",
+        "newCases": null,
+        "people_fully_vaccinated": 2026127597,
+        "population": 3432097300,
+        "totalCases": null,
+        "vaccinations": 4877696989
+    },
+    {
+        "continent": "Europe",
+        "date": "2023-03-25",
+        "location": "Luxembourg",
+        "newCases": 79,
+        "people_fully_vaccinated": null,
+        "population": 647601,
+        "totalCases": 319430,
+        "vaccinations": 1374547
+    },
+    {
+        "continent": "Asia",
+        "date": "2023-04-13",
+        "location": "Macao",
+        "newCases": null,
+        "people_fully_vaccinated": 642266,
+        "population": 695180,
+        "totalCases": null,
+        "vaccinations": 1802985
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-05-21",
+        "location": "Madagascar",
+        "newCases": 0,
+        "people_fully_vaccinated": 2519918,
+        "population": 29611718,
+        "totalCases": 68281,
+        "vaccinations": 2973152
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-05-21",
+        "location": "Malawi",
+        "newCases": 0,
+        "people_fully_vaccinated": 4092667,
+        "population": 20405318,
+        "totalCases": 88638,
+        "vaccinations": 8168028
+    },
+    {
+        "continent": "Asia",
+        "date": "2023-06-03",
+        "location": "Malaysia",
+        "newCases": null,
+        "people_fully_vaccinated": 27550399,
+        "population": 33938216,
+        "totalCases": null,
+        "vaccinations": 72630438
+    },
+    {
+        "continent": "Asia",
+        "date": "2023-05-25",
+        "location": "Maldives",
+        "newCases": 0,
+        "people_fully_vaccinated": 385167,
+        "population": 523798,
+        "totalCases": 186625,
+        "vaccinations": 951764
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-05-14",
+        "location": "Mali",
+        "newCases": 2,
+        "people_fully_vaccinated": 3633589,
+        "population": 22593598,
+        "totalCases": 33147,
+        "vaccinations": 5922585
+    },
+    {
+        "continent": "Europe",
+        "date": "2023-05-30",
+        "location": "Malta",
+        "newCases": 79,
+        "people_fully_vaccinated": 471521,
+        "population": 533293,
+        "totalCases": 118756,
+        "vaccinations": 1380865
+    },
+    {
+        "continent": "Oceania",
+        "date": null,
+        "location": "Marshall Islands",
+        "newCases": null,
+        "people_fully_vaccinated": null,
+        "population": 41593,
+        "totalCases": null,
+        "vaccinations": null
+    },
+    {
+        "continent": "North America",
+        "date": null,
+        "location": "Martinique",
+        "newCases": null,
+        "people_fully_vaccinated": null,
+        "population": 367512,
+        "totalCases": null,
+        "vaccinations": null
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-05-14",
+        "location": "Mauritania",
+        "newCases": 0,
+        "people_fully_vaccinated": 1538089,
+        "population": 4736146,
+        "totalCases": 63663,
+        "vaccinations": 4068530
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-05-21",
+        "location": "Mauritius",
+        "newCases": 0,
+        "people_fully_vaccinated": 1088142,
+        "population": 1299478,
+        "totalCases": 305463,
+        "vaccinations": 2615218
+    },
+    {
+        "continent": "Africa",
+        "date": null,
+        "location": "Mayotte",
+        "newCases": null,
+        "people_fully_vaccinated": null,
+        "population": 326113,
+        "totalCases": null,
+        "vaccinations": null
+    },
+    {
+        "continent": "North America",
+        "date": "2022-10-07",
+        "location": "Mexico",
+        "newCases": 659,
+        "people_fully_vaccinated": 81849962,
+        "population": 127504120,
+        "totalCases": 7123157,
+        "vaccinations": 223158993
+    },
+    {
+        "continent": "Oceania",
+        "date": null,
+        "location": "Micronesia (country)",
+        "newCases": null,
+        "people_fully_vaccinated": null,
+        "population": 114178,
+        "totalCases": null,
+        "vaccinations": null
+    },
+    {
+        "continent": "Europe",
+        "date": "2023-05-14",
+        "location": "Moldova",
+        "newCases": 76,
+        "people_fully_vaccinated": 1078250,
+        "population": 3272993,
+        "totalCases": 620519,
+        "vaccinations": 2287894
+    },
+    {
+        "continent": "Europe",
+        "date": "2021-12-21",
+        "location": "Monaco",
+        "newCases": 94,
+        "people_fully_vaccinated": 25667,
+        "population": 36491,
+        "totalCases": 4324,
+        "vaccinations": 65140
+    },
+    {
+        "continent": "Asia",
+        "date": "2022-05-18",
+        "location": "Mongolia",
+        "newCases": 0,
+        "people_fully_vaccinated": null,
+        "population": 3398373,
+        "totalCases": 924035,
+        "vaccinations": 5492919
+    },
+    {
+        "continent": "Europe",
+        "date": "2022-08-26",
+        "location": "Montenegro",
+        "newCases": 325,
+        "people_fully_vaccinated": 284869,
+        "population": 627082,
+        "totalCases": 274160,
+        "vaccinations": 679171
+    },
+    {
+        "continent": "North America",
+        "date": "2022-12-16",
+        "location": "Montserrat",
+        "newCases": 0,
+        "people_fully_vaccinated": 1952,
+        "population": 4413,
+        "totalCases": 1403,
+        "vaccinations": 4619
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-05-14",
+        "location": "Morocco",
+        "newCases": 0,
+        "people_fully_vaccinated": 23521989,
+        "population": 37457976,
+        "totalCases": 1274180,
+        "vaccinations": 55389602
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-04-23",
+        "location": "Mozambique",
+        "newCases": 0,
+        "people_fully_vaccinated": 19765811,
+        "population": 32969520,
+        "totalCases": 233398,
+        "vaccinations": 29457535
+    },
+    {
+        "continent": "Asia",
+        "date": "2022-06-18",
+        "location": "Myanmar",
+        "newCases": 18,
+        "people_fully_vaccinated": 27545329,
+        "population": 54179312,
+        "totalCases": 613485,
+        "vaccinations": 64549994
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-05-14",
+        "location": "Namibia",
+        "newCases": 0,
+        "people_fully_vaccinated": 538776,
+        "population": 2567024,
+        "totalCases": 171310,
+        "vaccinations": 990462
+    },
+    {
+        "continent": "Oceania",
+        "date": "2023-02-20",
+        "location": "Nauru",
+        "newCases": 0,
+        "people_fully_vaccinated": 11346,
+        "population": 12691,
+        "totalCases": 5247,
+        "vaccinations": 32157
+    },
+    {
+        "continent": "Asia",
+        "date": "2023-05-30",
+        "location": "Nepal",
+        "newCases": 6,
+        "people_fully_vaccinated": 24377743,
+        "population": 30547586,
+        "totalCases": 1003335,
+        "vaccinations": 61989256
+    },
+    {
+        "continent": "Europe",
+        "date": "2022-09-02",
+        "location": "Netherlands",
+        "newCases": 1171,
+        "people_fully_vaccinated": 11957652,
+        "population": 17564020,
+        "totalCases": 8387421,
+        "vaccinations": 36104942
+    },
+    {
+        "continent": "Oceania",
+        "date": "2023-05-09",
+        "location": "New Caledonia",
+        "newCases": 0,
+        "people_fully_vaccinated": 184816,
+        "population": 289959,
+        "totalCases": 80058,
+        "vaccinations": 480702
+    },
+    {
+        "continent": "Oceania",
+        "date": "2023-04-04",
+        "location": "New Zealand",
+        "newCases": 0,
+        "people_fully_vaccinated": 4182631,
+        "population": 5185289,
+        "totalCases": 2217047,
+        "vaccinations": 12052315
+    },
+    {
+        "continent": "North America",
+        "date": "2023-05-05",
+        "location": "Nicaragua",
+        "newCases": 0,
+        "people_fully_vaccinated": 6091122,
+        "population": 6948395,
+        "totalCases": 15697,
+        "vaccinations": 15328476
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-03-12",
+        "location": "Niger",
+        "newCases": 0,
+        "people_fully_vaccinated": 5454196,
+        "population": 26207982,
+        "totalCases": 9513,
+        "vaccinations": 7339299
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-03-19",
+        "location": "Nigeria",
+        "newCases": 0,
+        "people_fully_vaccinated": 69793071,
+        "population": 218541216,
+        "totalCases": 266652,
+        "vaccinations": 116606863
+    },
+    {
+        "continent": "Oceania",
+        "date": "2023-03-04",
+        "location": "Niue",
+        "newCases": 0,
+        "people_fully_vaccinated": 1635,
+        "population": 1952,
+        "totalCases": 747,
+        "vaccinations": 4923
+    },
+    {
+        "continent": null,
+        "date": "2023-06-03",
+        "location": "North America",
+        "newCases": null,
+        "people_fully_vaccinated": 394297754,
+        "population": 600323657,
+        "totalCases": null,
+        "vaccinations": 1150564347
+    },
+    {
+        "continent": "Asia",
+        "date": null,
+        "location": "North Korea",
+        "newCases": null,
+        "people_fully_vaccinated": null,
+        "population": 26069416,
+        "totalCases": null,
+        "vaccinations": null
+    },
+    {
+        "continent": "Europe",
+        "date": "2023-05-07",
+        "location": "North Macedonia",
+        "newCases": 0,
+        "people_fully_vaccinated": 838181,
+        "population": 2093606,
+        "totalCases": 348215,
+        "vaccinations": 1862987
+    },
+    {
+        "continent": "Asia",
+        "date": "2022-12-04",
+        "location": "Northern Cyprus",
+        "newCases": null,
+        "people_fully_vaccinated": null,
+        "population": 382836,
+        "totalCases": null,
+        "vaccinations": 861519
+    },
+    {
+        "continent": "Europe",
+        "date": "2023-05-31",
+        "location": "Northern Ireland",
+        "newCases": null,
+        "people_fully_vaccinated": 1360947,
+        "population": 1896000,
+        "totalCases": null,
+        "vaccinations": 4589120
+    },
+    {
+        "continent": "Oceania",
+        "date": null,
+        "location": "Northern Mariana Islands",
+        "newCases": null,
+        "people_fully_vaccinated": null,
+        "population": 49574,
+        "totalCases": null,
+        "vaccinations": null
+    },
+    {
+        "continent": "Europe",
+        "date": "2022-11-13",
+        "location": "Norway",
+        "newCases": 66,
+        "people_fully_vaccinated": 4054726,
+        "population": 5434324,
+        "totalCases": 1467091,
+        "vaccinations": 12145560
+    },
+    {
+        "continent": null,
+        "date": "2023-05-09",
+        "location": "Oceania",
+        "newCases": 0,
+        "people_fully_vaccinated": 27965117,
+        "population": 45038860,
+        "totalCases": 14063907,
+        "vaccinations": 82818337
+    },
+    {
+        "continent": "Asia",
+        "date": "2022-10-25",
+        "location": "Oman",
+        "newCases": 0,
+        "people_fully_vaccinated": 3048826,
+        "population": 4576300,
+        "totalCases": 398775,
+        "vaccinations": 7086050
+    },
+    {
+        "continent": "Asia",
+        "date": "2023-05-29",
+        "location": "Pakistan",
+        "newCases": 0,
+        "people_fully_vaccinated": 140444546,
+        "population": 235824864,
+        "totalCases": 1580631,
+        "vaccinations": 338879164
+    },
+    {
+        "continent": "Oceania",
+        "date": null,
+        "location": "Palau",
+        "newCases": null,
+        "people_fully_vaccinated": null,
+        "population": 18084,
+        "totalCases": null,
+        "vaccinations": null
+    },
+    {
+        "continent": "Asia",
+        "date": "2022-10-18",
+        "location": "Palestine",
+        "newCases": 0,
+        "people_fully_vaccinated": 1776973,
+        "population": 5250076,
+        "totalCases": 703014,
+        "vaccinations": 3748571
+    },
+    {
+        "continent": "North America",
+        "date": "2023-05-12",
+        "location": "Panama",
+        "newCases": 0,
+        "people_fully_vaccinated": 3174155,
+        "population": 4408582,
+        "totalCases": 1037324,
+        "vaccinations": 8893001
+    },
+    {
+        "continent": "Oceania",
+        "date": "2023-05-01",
+        "location": "Papua New Guinea",
+        "newCases": 0,
+        "people_fully_vaccinated": 321192,
+        "population": 10142625,
+        "totalCases": 46843,
+        "vaccinations": 737695
+    },
+    {
+        "continent": "South America",
+        "date": "2023-05-12",
+        "location": "Paraguay",
+        "newCases": 0,
+        "people_fully_vaccinated": 3546685,
+        "population": 6780745,
+        "totalCases": 735759,
+        "vaccinations": 9745545
+    },
+    {
+        "continent": "South America",
+        "date": "2023-06-01",
+        "location": "Peru",
+        "newCases": null,
+        "people_fully_vaccinated": 28659655,
+        "population": 34049588,
+        "totalCases": null,
+        "vaccinations": 89646153
+    },
+    {
+        "continent": "Asia",
+        "date": "2023-03-19",
+        "location": "Philippines",
+        "newCases": 174,
+        "people_fully_vaccinated": 78443972,
+        "population": 115559008,
+        "totalCases": 4078983,
+        "vaccinations": 189317158
+    },
+    {
+        "continent": "Oceania",
+        "date": "2022-08-29",
+        "location": "Pitcairn",
+        "newCases": 0,
+        "people_fully_vaccinated": 47,
+        "population": 47,
+        "totalCases": 4,
+        "vaccinations": 117
+    },
+    {
+        "continent": "Europe",
+        "date": "2023-06-02",
+        "location": "Poland",
+        "newCases": null,
+        "people_fully_vaccinated": 22648052,
+        "population": 39857144,
+        "totalCases": null,
+        "vaccinations": 58009158
+    },
+    {
+        "continent": "Europe",
+        "date": "2023-05-12",
+        "location": "Portugal",
+        "newCases": 231,
+        "people_fully_vaccinated": 8900824,
+        "population": 10270857,
+        "totalCases": 5583979,
+        "vaccinations": 28176562
+    },
+    {
+        "continent": "North America",
+        "date": null,
+        "location": "Puerto Rico",
+        "newCases": null,
+        "people_fully_vaccinated": null,
+        "population": 3252412,
+        "totalCases": null,
+        "vaccinations": null
+    },
+    {
+        "continent": "Asia",
+        "date": "2023-05-07",
+        "location": "Qatar",
+        "newCases": 0,
+        "people_fully_vaccinated": 2852178,
+        "population": 2695131,
+        "totalCases": 509440,
+        "vaccinations": 7609178
+    },
+    {
+        "continent": "Africa",
+        "date": null,
+        "location": "Reunion",
+        "newCases": null,
+        "people_fully_vaccinated": null,
+        "population": 974062,
+        "totalCases": null,
+        "vaccinations": null
+    },
+    {
+        "continent": "Europe",
+        "date": "2022-06-11",
+        "location": "Romania",
+        "newCases": 389,
+        "people_fully_vaccinated": 8114769,
+        "population": 19659270,
+        "totalCases": 2912266,
+        "vaccinations": 16827486
+    },
+    {
+        "continent": "Europe",
+        "date": "2023-05-26",
+        "location": "Russia",
+        "newCases": 0,
+        "people_fully_vaccinated": 79702396,
+        "population": 144713312,
+        "totalCases": 22917873,
+        "vaccinations": 186692479
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-01-01",
+        "location": "Rwanda",
+        "newCases": 0,
+        "people_fully_vaccinated": 9897876,
+        "population": 13776702,
+        "totalCases": 132979,
+        "vaccinations": 26106436
+    },
+    {
+        "continent": "North America",
+        "date": null,
+        "location": "Saint Barthelemy",
+        "newCases": null,
+        "people_fully_vaccinated": null,
+        "population": 10994,
+        "totalCases": null,
+        "vaccinations": null
+    },
+    {
+        "continent": "Africa",
+        "date": "2021-05-05",
+        "location": "Saint Helena",
+        "newCases": 0,
+        "people_fully_vaccinated": 3531,
+        "population": 5401,
+        "totalCases": null,
+        "vaccinations": 7892
+    },
+    {
+        "continent": "North America",
+        "date": "2022-12-02",
+        "location": "Saint Kitts and Nevis",
+        "newCases": 0,
+        "people_fully_vaccinated": 27000,
+        "population": 47681,
+        "totalCases": 6556,
+        "vaccinations": 64297
+    },
+    {
+        "continent": "North America",
+        "date": "2022-12-02",
+        "location": "Saint Lucia",
+        "newCases": 0,
+        "people_fully_vaccinated": 54971,
+        "population": 179872,
+        "totalCases": 29711,
+        "vaccinations": 122977
+    },
+    {
+        "continent": "North America",
+        "date": null,
+        "location": "Saint Martin (French part)",
+        "newCases": null,
+        "people_fully_vaccinated": null,
+        "population": 31816,
+        "totalCases": null,
+        "vaccinations": null
+    },
+    {
+        "continent": "North America",
+        "date": null,
+        "location": "Saint Pierre and Miquelon",
+        "newCases": null,
+        "people_fully_vaccinated": null,
+        "population": 5885,
+        "totalCases": null,
+        "vaccinations": null
+    },
+    {
+        "continent": "North America",
+        "date": "2023-04-21",
+        "location": "Saint Vincent and the Grenadines",
+        "newCases": 0,
+        "people_fully_vaccinated": 31632,
+        "population": 103959,
+        "totalCases": 9602,
+        "vaccinations": 73443
+    },
+    {
+        "continent": "Oceania",
+        "date": "2023-04-17",
+        "location": "Samoa",
+        "newCases": 0,
+        "people_fully_vaccinated": 177954,
+        "population": 222390,
+        "totalCases": 16737,
+        "vaccinations": 453083
+    },
+    {
+        "continent": "Europe",
+        "date": "2022-05-22",
+        "location": "San Marino",
+        "newCases": 7,
+        "people_fully_vaccinated": 23633,
+        "population": 33690,
+        "totalCases": 17034,
+        "vaccinations": 69338
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-05-07",
+        "location": "Sao Tome and Principe",
+        "newCases": 0,
+        "people_fully_vaccinated": 111986,
+        "population": 227393,
+        "totalCases": 6569,
+        "vaccinations": 262837
+    },
+    {
+        "continent": "Asia",
+        "date": "2023-04-25",
+        "location": "Saudi Arabia",
+        "newCases": 144,
+        "people_fully_vaccinated": 25433941,
+        "population": 36408824,
+        "totalCases": 839491,
+        "vaccinations": 68534631
+    },
+    {
+        "continent": "Europe",
+        "date": "2022-09-04",
+        "location": "Scotland",
+        "newCases": null,
+        "people_fully_vaccinated": 4284632,
+        "population": 5466000,
+        "totalCases": null,
+        "vaccinations": 13014285
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-05-07",
+        "location": "Senegal",
+        "newCases": 0,
+        "people_fully_vaccinated": 1442833,
+        "population": 17316452,
+        "totalCases": 88997,
+        "vaccinations": 2936343
+    },
+    {
+        "continent": "Europe",
+        "date": "2022-06-23",
+        "location": "Serbia",
+        "newCases": 480,
+        "people_fully_vaccinated": 3278198,
+        "population": 6871547,
+        "totalCases": 2023889,
+        "vaccinations": 8534688
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-04-09",
+        "location": "Seychelles",
+        "newCases": 0,
+        "people_fully_vaccinated": 83565,
+        "population": 107135,
+        "totalCases": 50937,
+        "vaccinations": 224558
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-05-21",
+        "location": "Sierra Leone",
+        "newCases": 0,
+        "people_fully_vaccinated": 4474092,
+        "population": 8605723,
+        "totalCases": 7762,
+        "vaccinations": 8124614
+    },
+    {
+        "continent": "Asia",
+        "date": "2022-10-25",
+        "location": "Singapore",
+        "newCases": 2994,
+        "people_fully_vaccinated": 5093804,
+        "population": 5637022,
+        "totalCases": 2070784,
+        "vaccinations": 14727569
+    },
+    {
+        "continent": "North America",
+        "date": "2023-03-31",
+        "location": "Sint Maarten (Dutch part)",
+        "newCases": 0,
+        "people_fully_vaccinated": 26773,
+        "population": 44192,
+        "totalCases": 11030,
+        "vaccinations": 66829
+    },
+    {
+        "continent": "Europe",
+        "date": "2022-07-31",
+        "location": "Slovakia",
+        "newCases": 474,
+        "people_fully_vaccinated": 2577827,
+        "population": 5643455,
+        "totalCases": 1817779,
+        "vaccinations": 5754313
+    },
+    {
+        "continent": "Europe",
+        "date": "2022-07-06",
+        "location": "Slovenia",
+        "newCases": 1492,
+        "people_fully_vaccinated": null,
+        "population": 2119843,
+        "totalCases": 1044863,
+        "vaccinations": 2996643
+    },
+    {
+        "continent": "Oceania",
+        "date": "2022-10-31",
+        "location": "Solomon Islands",
+        "newCases": 0,
+        "people_fully_vaccinated": 254352,
+        "population": 724272,
+        "totalCases": 21544,
+        "vaccinations": 625956
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-04-30",
+        "location": "Somalia",
+        "newCases": 0,
+        "people_fully_vaccinated": 7035193,
+        "population": 17597508,
+        "totalCases": 27334,
+        "vaccinations": 9443849
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-05-14",
+        "location": "South Africa",
+        "newCases": 0,
+        "people_fully_vaccinated": 21038797,
+        "population": 59893884,
+        "totalCases": 4072533,
+        "vaccinations": 38841308
+    },
+    {
+        "continent": null,
+        "date": "2023-06-03",
+        "location": "South America",
+        "newCases": null,
+        "people_fully_vaccinated": 336862889,
+        "population": 436816679,
+        "totalCases": null,
+        "vaccinations": 957334826
+    },
+    {
+        "continent": "Asia",
+        "date": "2022-12-12",
+        "location": "South Korea",
+        "newCases": 86852,
+        "people_fully_vaccinated": 44347430,
+        "population": 51815808,
+        "totalCases": 27841001,
+        "vaccinations": 129647782
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-05-07",
+        "location": "South Sudan",
+        "newCases": 0,
+        "people_fully_vaccinated": 4220606,
+        "population": 10913172,
+        "totalCases": 18368,
+        "vaccinations": 4312900
+    },
+    {
+        "continent": "Europe",
+        "date": "2023-05-24",
+        "location": "Spain",
+        "newCases": 0,
+        "people_fully_vaccinated": 40739123,
+        "population": 47558632,
+        "totalCases": 13868227,
+        "vaccinations": 105840320
+    },
+    {
+        "continent": "Asia",
+        "date": "2022-10-30",
+        "location": "Sri Lanka",
+        "newCases": 11,
+        "people_fully_vaccinated": 14752827,
+        "population": 21832150,
+        "totalCases": 671070,
+        "vaccinations": 40116590
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-04-02",
+        "location": "Sudan",
+        "newCases": 0,
+        "people_fully_vaccinated": 13416394,
+        "population": 46874200,
+        "totalCases": 63922,
+        "vaccinations": 22598737
+    },
+    {
+        "continent": "South America",
+        "date": "2022-05-23",
+        "location": "Suriname",
+        "newCases": 0,
+        "people_fully_vaccinated": 237879,
+        "population": 618046,
+        "totalCases": 80240,
+        "vaccinations": 505699
+    },
+    {
+        "continent": "Europe",
+        "date": "2023-05-28",
+        "location": "Sweden",
+        "newCases": 0,
+        "people_fully_vaccinated": null,
+        "population": 10549349,
+        "totalCases": 2709815,
+        "vaccinations": 26157046
+    },
+    {
+        "continent": "Europe",
+        "date": "2023-05-27",
+        "location": "Switzerland",
+        "newCases": 0,
+        "people_fully_vaccinated": null,
+        "population": 8740471,
+        "totalCases": 4405430,
+        "vaccinations": 16939813
+    },
+    {
+        "continent": "Asia",
+        "date": "2023-04-18",
+        "location": "Syria",
+        "newCases": 0,
+        "people_fully_vaccinated": 2358365,
+        "population": 22125242,
+        "totalCases": 57423,
+        "vaccinations": 5090630
+    },
+    {
+        "continent": "Asia",
+        "date": "2023-04-27",
+        "location": "Taiwan",
+        "newCases": null,
+        "people_fully_vaccinated": 20772207,
+        "population": 23893396,
+        "totalCases": null,
+        "vaccinations": 67913330
+    },
+    {
+        "continent": "Asia",
+        "date": "2022-12-04",
+        "location": "Tajikistan",
+        "newCases": 0,
+        "people_fully_vaccinated": 5170582,
+        "population": 9952789,
+        "totalCases": 17786,
+        "vaccinations": 18871161
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-03-12",
+        "location": "Tanzania",
+        "newCases": 0,
+        "people_fully_vaccinated": 32165791,
+        "population": 65497752,
+        "totalCases": 42927,
+        "vaccinations": 39392419
+    },
+    {
+        "continent": "Asia",
+        "date": "2022-09-30",
+        "location": "Thailand",
+        "newCases": 839,
+        "people_fully_vaccinated": 53486086,
+        "population": 71697024,
+        "totalCases": 4681309,
+        "vaccinations": 142635014
+    },
+    {
+        "continent": "Asia",
+        "date": "2023-05-30",
+        "location": "Timor",
+        "newCases": 1,
+        "people_fully_vaccinated": 799409,
+        "population": 1341298,
+        "totalCases": 23450,
+        "vaccinations": 2018353
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-04-02",
+        "location": "Togo",
+        "newCases": 4,
+        "people_fully_vaccinated": 1554066,
+        "population": 8848700,
+        "totalCases": 39458,
+        "vaccinations": 3401991
+    },
+    {
+        "continent": "Oceania",
+        "date": "2022-12-05",
+        "location": "Tokelau",
+        "newCases": 0,
+        "people_fully_vaccinated": 2203,
+        "population": 1893,
+        "totalCases": null,
+        "vaccinations": 5374
+    },
+    {
+        "continent": "Oceania",
+        "date": "2023-04-11",
+        "location": "Tonga",
+        "newCases": 0,
+        "people_fully_vaccinated": 77360,
+        "population": 106867,
+        "totalCases": 16814,
+        "vaccinations": 203208
+    },
+    {
+        "continent": "North America",
+        "date": "2022-09-21",
+        "location": "Trinidad and Tobago",
+        "newCases": 59,
+        "people_fully_vaccinated": 716898,
+        "population": 1531043,
+        "totalCases": 182306,
+        "vaccinations": 1580898
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-05-30",
+        "location": "Tunisia",
+        "newCases": 0,
+        "people_fully_vaccinated": 6401288,
+        "population": 12356116,
+        "totalCases": 1153261,
+        "vaccinations": 13252435
+    },
+    {
+        "continent": "Asia",
+        "date": "2022-11-22",
+        "location": "Turkey",
+        "newCases": 0,
+        "people_fully_vaccinated": 53176961,
+        "population": 85341248,
+        "totalCases": 17004677,
+        "vaccinations": 152543341
+    },
+    {
+        "continent": "Asia",
+        "date": "2023-02-05",
+        "location": "Turkmenistan",
+        "newCases": 0,
+        "people_fully_vaccinated": 3358426,
+        "population": 6430777,
+        "totalCases": null,
+        "vaccinations": 13040514
+    },
+    {
+        "continent": "North America",
+        "date": "2023-01-06",
+        "location": "Turks and Caicos Islands",
+        "newCases": 0,
+        "people_fully_vaccinated": 30710,
+        "population": 45726,
+        "totalCases": 6479,
+        "vaccinations": 73907
+    },
+    {
+        "continent": "Oceania",
+        "date": "2023-02-01",
+        "location": "Tuvalu",
+        "newCases": 0,
+        "people_fully_vaccinated": 9505,
+        "population": 11335,
+        "totalCases": 2779,
+        "vaccinations": 26783
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-03-26",
+        "location": "Uganda",
+        "newCases": 19,
+        "people_fully_vaccinated": 13043107,
+        "population": 47249588,
+        "totalCases": 170510,
+        "vaccinations": 26406936
+    },
+    {
+        "continent": "Europe",
+        "date": "2022-02-27",
+        "location": "Ukraine",
+        "newCases": 4943,
+        "people_fully_vaccinated": 15153577,
+        "population": 39701744,
+        "totalCases": 4831995,
+        "vaccinations": 31668577
+    },
+    {
+        "continent": "Asia",
+        "date": "2022-06-20",
+        "location": "United Arab Emirates",
+        "newCases": 1489,
+        "people_fully_vaccinated": 9792266,
+        "population": 9441138,
+        "totalCases": 927387,
+        "vaccinations": 24922054
+    },
+    {
+        "continent": "Europe",
+        "date": "2022-09-04",
+        "location": "United Kingdom",
+        "newCases": 3808,
+        "people_fully_vaccinated": 50745901,
+        "population": 67508936,
+        "totalCases": 23539113,
+        "vaccinations": 151248820
+    },
+    {
+        "continent": "North America",
+        "date": "2023-05-09",
+        "location": "United States",
+        "newCases": 0,
+        "people_fully_vaccinated": 230637348,
+        "population": 338289856,
+        "totalCases": 103343569,
+        "vaccinations": 676728782
+    },
+    {
+        "continent": "North America",
+        "date": null,
+        "location": "United States Virgin Islands",
+        "newCases": null,
+        "people_fully_vaccinated": null,
+        "population": 99479,
+        "totalCases": null,
+        "vaccinations": null
+    },
+    {
+        "continent": null,
+        "date": "2023-06-03",
+        "location": "Upper middle income",
+        "newCases": null,
+        "people_fully_vaccinated": 1988985225,
+        "population": 2525921300,
+        "totalCases": null,
+        "vaccinations": 5418428728
+    },
+    {
+        "continent": "South America",
+        "date": "2023-06-03",
+        "location": "Uruguay",
+        "newCases": null,
+        "people_fully_vaccinated": 2902439,
+        "population": 3422796,
+        "totalCases": null,
+        "vaccinations": 9023302
+    },
+    {
+        "continent": "Asia",
+        "date": "2023-04-16",
+        "location": "Uzbekistan",
+        "newCases": 39,
+        "people_fully_vaccinated": 18147665,
+        "population": 34627648,
+        "totalCases": 252471,
+        "vaccinations": 75807715
+    },
+    {
+        "continent": "Oceania",
+        "date": "2023-02-20",
+        "location": "Vanuatu",
+        "newCases": 0,
+        "people_fully_vaccinated": 162250,
+        "population": 326744,
+        "totalCases": 12014,
+        "vaccinations": 366638
+    },
+    {
+        "continent": "Europe",
+        "date": null,
+        "location": "Vatican",
+        "newCases": null,
+        "people_fully_vaccinated": null,
+        "population": 808,
+        "totalCases": null,
+        "vaccinations": null
+    },
+    {
+        "continent": "South America",
+        "date": "2022-12-07",
+        "location": "Venezuela",
+        "newCases": 50,
+        "people_fully_vaccinated": null,
+        "population": 28301700,
+        "totalCases": 547891,
+        "vaccinations": 37860994
+    },
+    {
+        "continent": "Asia",
+        "date": "2023-05-25",
+        "location": "Vietnam",
+        "newCases": 1081,
+        "people_fully_vaccinated": 85950998,
+        "population": 98186856,
+        "totalCases": 11606479,
+        "vaccinations": 266403148
+    },
+    {
+        "continent": "Europe",
+        "date": "2023-05-25",
+        "location": "Wales",
+        "newCases": null,
+        "people_fully_vaccinated": null,
+        "population": 3170000,
+        "totalCases": null,
+        "vaccinations": 8866460
+    },
+    {
+        "continent": "Oceania",
+        "date": "2023-01-23",
+        "location": "Wallis and Futuna",
+        "newCases": 0,
+        "people_fully_vaccinated": 6803,
+        "population": 11596,
+        "totalCases": 3427,
+        "vaccinations": 18058
+    },
+    {
+        "continent": "Africa",
+        "date": null,
+        "location": "Western Sahara",
+        "newCases": null,
+        "people_fully_vaccinated": null,
+        "population": 576005,
+        "totalCases": null,
+        "vaccinations": null
+    },
+    {
+        "continent": null,
+        "date": "2023-06-03",
+        "location": "World",
+        "newCases": null,
+        "people_fully_vaccinated": 5133722252,
+        "population": 7975105024,
+        "totalCases": null,
+        "vaccinations": 13410597372
+    },
+    {
+        "continent": "Asia",
+        "date": "2023-04-18",
+        "location": "Yemen",
+        "newCases": 0,
+        "people_fully_vaccinated": 788707,
+        "population": 33696612,
+        "totalCases": 11945,
+        "vaccinations": 1275368
+    },
+    {
+        "continent": "Africa",
+        "date": "2023-05-22",
+        "location": "Zambia",
+        "newCases": 0,
+        "people_fully_vaccinated": 9213802,
+        "population": 20017670,
+        "totalCases": 343995,
+        "vaccinations": 13454213
+    },
+    {
+        "continent": "Africa",
+        "date": "2022-10-09",
+        "location": "Zimbabwe",
+        "newCases": 0,
+        "people_fully_vaccinated": 4751270,
+        "population": 16320539,
+        "totalCases": 257655,
+        "vaccinations": 12222754
+    }
+]
